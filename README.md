@@ -10,6 +10,7 @@ Using **Jack Audio for Unity**
 2. load Unity and start Game
 3. Start Max -> Set Output Device to JackRouter
 4. in JackRouter: disconnect Max from SystemPlayback and connect to Unity
+* BufferSize and SampleRate must be identical in all three parties
 
 <hr>
 <br>
