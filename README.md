@@ -3,14 +3,21 @@
 
 
 ### 13. December 2018 ###  
-*Breakthrough: Audio Bridge working*    
-Using **Jack Audio for Unity**
+*Breakthrough: Audio Bridge WORKING*    
+Using **Jack Audio for Unity**:
 * reason not clear - maybe application start order crucial:
   1. Start Jack Server
   2. load Unity and start Game
   3. Start Max -> Set Output Device to JackRouter
   4. in JackRouter: disconnect Max from SystemPlayback and connect to Unity
 * BufferSize and SampleRate must be identical in all three parties
+
+Setup in Unity:
+* one Instance of the *Jack Multiplexer* must be set on the Camera/Audio-Listener Object  
+  there define the number of channels
+* create Object: 
+  add Audio Source component, tick Loop on
+  add Jack Source Receive script, connect Multiplexer to the Camera-object where the multiplexer resides, choose input channel (0, 1, 2, 3, ...)
 
 <hr>
 <br>
