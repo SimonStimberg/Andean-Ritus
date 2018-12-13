@@ -11,7 +11,7 @@ Using **Jack Audio for Unity**:
   3. Start Max -> Set Output Device to JackRouter
   4. in JackRouter: disconnect Max from SystemPlayback and connect to Unity
 * BufferSize and SampleRate must be identical in all three parties  
-  
+<br>
   
 Setup in Unity:
 * one Instance of the *Jack Multiplexer* must be set on the Camera/Audio-Listener Object  
