@@ -1,12 +1,14 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
-### 23. November 2018 ###  
-*Setting up OSC-communication between Max/MSP and Unity:*    
-* MaxMSP: installed the 'CNMAT Externals' package via the package manager. (no admin rights required)  
-Communication runs via the Max-Object 'OpenSoundControl'
-* Unity: worked with PerilNoise sample project immediately    
-  
-Resources:  
-https://www.uni-weimar.de/kunst-und-gestaltung/wiki/GMU:Tutorials/Visual_Interaction/How_to_Control_Unity_with_MaxMsp
+
+### 13. December 2018 ###  
+*Breakthrough: Audio Bridge working*    
+Using **Jack Audio for Unity**
+* reason not clear - maybe application start order crucial:
+1. Start Jack Server
+2. load Unity and start Game
+3. Start Max -> Set Output Device to JackRouter
+4. in JackRouter: disconnect Max from SystemPlayback and connect to Unity
+
 <hr>
 
 ### 5. December 2018 ###   
@@ -61,5 +63,15 @@ https://github.com/cgfarmer4/TheConductor
 
 Another OSC-Bridge  
 http://www.monoflow.org/unity3d-assets/uniosc/
+<hr>
 
 
+### 23. November 2018 ###  
+*Setting up OSC-communication between Max/MSP and Unity:*    
+* MaxMSP: installed the 'CNMAT Externals' package via the package manager. (no admin rights required)  
+Communication runs via the Max-Object 'OpenSoundControl'
+* Unity: worked with PerilNoise sample project immediately    
+  
+Resources:  
+https://www.uni-weimar.de/kunst-und-gestaltung/wiki/GMU:Tutorials/Visual_Interaction/How_to_Control_Unity_with_MaxMsp
+<hr>
