@@ -12,11 +12,12 @@ Using **Jack Audio for Unity**:
   4. in JackRouter: disconnect Max from SystemPlayback and connect to Unity
 * BufferSize and SampleRate must be identical in all three parties
 
+
 Setup in Unity:
 * one Instance of the *Jack Multiplexer* must be set on the Camera/Audio-Listener Object  
   there define the number of channels
-* create Object: 
-  add Audio Source component, tick Loop on
+* create Object:  
+  add Audio Source component, tick Loop on  
   add Jack Source Receive script, connect Multiplexer to the Camera-object where the multiplexer resides, choose input channel (0, 1, 2, 3, ...)
 
 <hr>
