@@ -10,7 +10,7 @@ Using **Jack Audio for Unity**
 4. in JackRouter: disconnect Max from SystemPlayback and connect to Unity
 
 <hr>
-
+<br>
 
 ### 5. December 2018 ###   
 *Trying to implement Audio Bridge between Max and Unity*  
@@ -65,6 +65,7 @@ https://github.com/cgfarmer4/TheConductor
 Another OSC-Bridge  
 http://www.monoflow.org/unity3d-assets/uniosc/
 <hr>
+<br>
 
 
 ### 23. November 2018 ###  
