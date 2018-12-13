@@ -18,7 +18,7 @@ Setup in Unity:
   there define the number of channels
 * create Object:  
   add Audio Source component, tick Loop on  
-  add Jack Source Receive script, connect Multiplexer to the Camera-object where the multiplexer resides, choose input channel (0, 1, 2, 3, ...)
+  add Jack Source Receive script, connect Multiplexer to the Camera-object where the multiplexer resides, choose input channel (0, 1, 2, 3, ...)  
 ![alt text](JackAudio-Prefs.png "Preferences")
 
 <hr>
