@@ -11,6 +11,7 @@ Using **Jack Audio for Unity**
 
 <hr>
 
+
 ### 5. December 2018 ###   
 *Trying to implement Audio Bridge between Max and Unity*  
 Several attempts failed:  
