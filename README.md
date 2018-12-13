@@ -6,8 +6,8 @@
 *Breakthrough: Audio Bridge working*    
 Using **Jack Audio for Unity**
 * reason not clear - maybe application start order crucial:
-1. Start Jack Server
-2. load Unity and start Game
+  1. Start Jack Server
+   2. load Unity and start Game
 3. Start Max -> Set Output Device to JackRouter
 4. in JackRouter: disconnect Max from SystemPlayback and connect to Unity
 * BufferSize and SampleRate must be identical in all three parties
