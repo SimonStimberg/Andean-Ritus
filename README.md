@@ -9,6 +9,9 @@ installed Unity at Workstation at home.
 * Added Video-Test-World project.  
 * Wrote a script that slightly transforms the World-Sphere (with 360°-Video)
   and moves the ground subtle -> psychedelic effect!
+  
+Also installed Max 7.3.6  
+(Max 8 also doesn't run on OSX 10.10)  
 
 
 <hr>
