@@ -2,6 +2,18 @@
 <br>
 
 
+### 13. January 2019 ###  
+installed Unity at Workstation at home.  
+(Version 2017.4.18f because 2018 requires at least OSX 10.11) 
+
+* Added Video-Test-World project.  
+* Wrote a script that slightly transforms the World-Sphere (with 360°-Video)
+  and moves the ground subtle -> psychedelic effect!
+
+
+<hr>
+<br>
+
 ### 13. December 2018 ###  
 *Breakthrough: Audio Bridge WORKING*    
 Using **Jack Audio for Unity**:
