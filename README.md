@@ -11,7 +11,11 @@
   seems that it has to be attached to a plane to work the best way. (rather then volumetric shapes)  
   
 * added a simple and working FreeFly Camera Script  
-  > possible now to look around with the mouse and move via the WASD keys
+  > possible now to look around with the mouse and move via the WASD keys  
+  resource: https://gist.github.com/gunderson/d7f096bd07874f31671306318019d996  
+  (resp. used a modified version by Ryan Breaker found in the comments below)
+  
+  
 
 
 <hr>
