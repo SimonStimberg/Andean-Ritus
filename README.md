@@ -21,6 +21,7 @@
   found some resources in order to automate the behaviour.  
   unity-manual: https://github.com/Unity-Technologies/PostProcessing/wiki/Manipulating-the-Stack  
   a promising forum post: https://answers.unity.com/questions/1355103/modifying-the-new-post-processing-stack-through-co.html  
+  got to be revised next time!  
   
   
 
