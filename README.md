@@ -11,9 +11,16 @@
   seems that it has to be attached to a plane to work the best way. (rather then volumetric shapes)  
   
 * added a simple and working FreeFly Camera Script  
-  > possible now to look around with the mouse and move via the WASD keys  
+  possible now to look around with the mouse and move via the WASD keys  
   resource: https://gist.github.com/gunderson/d7f096bd07874f31671306318019d996  
-  (resp. used a modified version by Ryan Breaker found in the comments below)
+  (resp. used a modified version by Ryan Breaker found in the comments below)  
+  
+* played around with post-processing profile > trippy results  
+  (e.g. motion blur: increase frame blending / chrom aberration: up to max / color grading: hue shifting around)  
+  
+  found some resources in order to automate the behaviour.  
+  unity-manual: https://github.com/Unity-Technologies/PostProcessing/wiki/Manipulating-the-Stack  
+  a promising forum post: https://answers.unity.com/questions/1355103/modifying-the-new-post-processing-stack-through-co.html  
   
   
 
