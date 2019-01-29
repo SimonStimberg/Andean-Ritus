@@ -2,6 +2,22 @@
 <br>
 
 
+### 29. January 2019 ###  
+* found a free 3 month licence for MaxMSP yay!
+
+* played around with the seaboard - understood conventions and constraints of the midi protocol and the signal flow in Max/MSP  (one has to prepend a 144 before the midi notes - dont know why yet--)
+https://cycling74.com/forums/sending-midi-notes-to-vst-synth
+
+* found out how to handle the multidimensional polyphonic expression (MPE), transmitted by the seaboard:
+https://rolisupport.freshdesk.com/support/solutions/articles/36000024621-max-using-blocks-with-max
+https://rolisupport.freshdesk.com/support/solutions/articles/36000027933-what-is-mpe-
+
+* tried to access the post processing behaviour in unity via a script, but realized that its far more complicated
+
+<hr>
+<br>
+
+
 ### 22. January 2019 ###  
 * added a better mirror material through a script and a shader after this tutorial:  
   https://www.youtube.com/watch?v=jD9LfpRH5Z4  
