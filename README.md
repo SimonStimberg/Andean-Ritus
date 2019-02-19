@@ -2,6 +2,30 @@
 <br>
 
 
+### 19. February 2019 ###  
+* played around with max
+  * there is a "analogue drum computer" entirely synthesized in max - sounds nice - every aspect is possible to manipulate
+  * tryed to setup a pulse/metronome - to generate some kind of sequencer - in the end a prefab would work better
+  
+* implemented VomHauptplatz Mouseview script - works better!
+
+* one thought for visual effects:
+  * more/bigger mirrors in the scene then rotate the world -> psychedelic mirroring effect
+
+* another thought - if there were a video buffer to write in max and display in unity, would be fancy
+  * but if its possibly at all would be to complicated
+
+* a possible solution to download equirectangular 360°-Videos from YouTube instead of their cubemap format:
+https://github.com/rg3/youtube-dl/issues/15267
+  * needs youtube-dl - best to install maybe homebrew first..
+  
+* concluded to just start doing something - rather than thinking how it could look or sound and beeing afraid from starting the wrong way
+
+
+<hr>
+<br>
+
+
 ### 29. January 2019 ###  
 * found a free 3 month licence for MaxMSP yay!
 
