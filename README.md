@@ -8,12 +8,19 @@ brainstormed about musical concept
 * algorithmic/serial composition 
 * no classic electronic music elements (such as bass/pad/lead..)
   * rather multiple sound events, that are synced to a pulse (timegrid) which form through theri interplay, musical patterns
+    * -> twelve tone music?
 * but still ritual/hypnotic/trance inducing feeling
   * techno-loops, sequencing / westafrican ritual music  
 
-Interesting Inspirations   
+**Interesting Inspirations**   
+
+Step Sequencer in Max/MSP  
+https://audiocookbook.org/step-sequencer-built-in-maxmsp/  
+  
 Celular Automaton (e.g. Conways Game of Life)  
-https://en.wikipedia.org/wiki/Conway's_Game_of_Life
+https://en.wikipedia.org/wiki/Conway's_Game_of_Life  
+  
+Asked Mischa to maybe participate in "composing" the music.
 
 
 <hr>
