@@ -2,6 +2,24 @@
 <br>
 
 
+### 27. February 2019 ###  
+
+brainstormed about musical concept  
+* algorithmic/serial composition 
+* no classic electronic music elements (such as bass/pad/lead..)
+  * rather multiple sound events, that are synced to a pulse (timegrid) which form through theri interplay, musical patterns
+* but still ritual/hypnotic/trance inducing feeling
+  * techno-loops, sequencing / westafrican ritual music  
+
+Interesting Inspirations   
+Celular Automaton (e.g. Conways Game of Life)  
+https://en.wikipedia.org/wiki/Conway's_Game_of_Life
+
+
+<hr>
+<br>
+
+
 ### 19. February 2019 ###  
 * played around with max
   * there is a "analogue drum computer" entirely synthesized in max - sounds nice - every aspect is possible to manipulate
