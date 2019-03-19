@@ -3,11 +3,12 @@
 
 ### 20. March 2019 ###  
 
-checked out the Live-Sequencer Object (live.step) in MAX/MSP  
-* words perfectly for the purpose - a bit complicate syntax but you can determine a lot
-* you can have at least up to 16 voices playing parallel
-* there are 5 parameters: pitch, velocity, duration and extra1, extra2 which are customizable
-build a random note generator which writes a random note on the sequencer grid
+* checked out the Live-Sequencer Object (live.step) in MAX/MSP  
+  * words perfectly for the purpose - a bit complicate syntax but you can determine a lot
+  * you can have at least up to 16 voices playing parallel
+  * there are 5 parameters: pitch, velocity, duration and extra1, extra2 which are customizable
+* build a random note generator which writes a random note on the sequencer grid
+  
   
 * downloaded a binaural patch which works surprisingly good  
   http://jakobhandersen.dk/projects/fft-based-binaural-panner/download/
@@ -20,8 +21,10 @@ build a random note generator which writes a random note on the sequencer grid
     * doppler effect between sounds -> interprets virtual movements -> new spatial position for every note
   * hopefully with headtracking and the visual input the spatial experience is improved
    
+   
 * Idea: maybe the sounds/objects should move instead of having a fixed position
   * depends on visual style (requires objects rather than glitches)
+  
   
 * decision: doing the sound entirely in MAX
 * also the calculation and generation
