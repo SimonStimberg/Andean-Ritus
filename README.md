@@ -3,8 +3,8 @@
 
 ### 20. March 2019 ###  
 
-work today
-* checked out the Live-Sequencer Object (live.step) in MAX/MSP  
+work today  
+* checked out the Live-Sequencer Object (live.step) in MAX/MSP
   * words perfectly for the purpose - a bit complicate syntax but you can determine a lot
   * you can have at least up to 16 voices playing parallel
   * there are 5 parameters: pitch, velocity, duration and extra1, extra2 which are customizable
