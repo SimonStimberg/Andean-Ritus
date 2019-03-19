@@ -3,13 +3,14 @@
 
 ### 20. March 2019 ###  
 
-* checked out the Live-Sequencer Object (live.step) in MAX/MSP
+* checked out the Live-Sequencer Object (live.step) in MAX/MSP  
   * words perfectly for the purpose - a bit complicate syntax but you can determine a lot
   * you can have at least up to 16 voices playing parallel
   * there are 5 parameters: pitch, velocity, duration and extra1, extra2 which are customizable
 * build a random note generator which writes a random note on the sequencer grid
   
-* downloaded a binaural patch which works surprisingly good
+* downloaded a binaural patch which works surprisingly good  
+  http://jakobhandersen.dk/projects/fft-based-binaural-panner/download/
 * implemented the simple version with the sequencer
   * so when a note is genereated, it generates random direction values
     * Azimuth -> 180° left/right (in 72 steps)
