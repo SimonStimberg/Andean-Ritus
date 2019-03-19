@@ -23,12 +23,12 @@
     * doppler effect between sounds -> interprets virtual movements -> new spatial position for every note
   * hopefully with headtracking and the visual input the spatial experience is improved
    
-   .
+.
    
 * Idea: maybe the sounds/objects should move instead of having a fixed position
   * depends on visual style (requires objects rather than glitches)
   
-  .
+.
   
 * decision: doing the sound entirely in MAX
 * also the calculation and generation
