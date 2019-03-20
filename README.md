@@ -6,12 +6,16 @@
 
 * linked MAX patch with Unity and made a sphere appear at the corresponding sound location in space.
 * engineerd the OSC script in Unity so that it can also send OSC messages in addition to receiving
+  * based on the scripts from this project: https://github.com/heaversm/unity-osc-receiver
+    * (seems to be the project the weimar script is derived from)
+    * also with video tutorial https://vimeo.com/95584442  (but without tackling the OSC-send part)
 * worked out to read the camera position in Unity and send it to Max to use it for correct spatialisation
-* worked out to get the rotation of the camamera and pass it on too (and learned about quaternations)
-  * so now with "headtracking" available, audio spatialisation works pretty fair
-  * had to disable the doppler effect in the spatializer because of the artifacts concerning fast the displacement of the sounds
-    * nevertheless orientation seems to work better with doppler turned on (-> more natural?)
-    * would be possible if using only one place per sequencer (= one spatializer instance for each sound=
+* worked out to get the rotation of the camamera and pass it on too (and learned about quaternation!)
+  * a nice blog entry to dig further if desired: https://developerblog.myo.com/quaternions/
+* so now with "headtracking" available, audio spatialisation works pretty fair
+* had to disable the doppler effect in the spatializer because of the artifacts concerning fast the displacement of the sounds
+  * nevertheless orientation seems to work better with doppler turned on (-> more natural?)
+  * would be possible if using only one place per sequencer (= one spatializer instance for each sound=
 
 
 <hr>
