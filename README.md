@@ -16,6 +16,8 @@
 * had to disable the doppler effect in the spatializer because of the artifacts concerning fast the displacement of the sounds
   * nevertheless orientation seems to work better with doppler turned on (-> more natural?)
   * would be possible if using only one place per sequencer (= one spatializer instance for each sound=
+* tackling the unsync problems of the Max metronome - useful forum discussion: https://cycling74.com/forums/cpu-usage-problems/
+  * turned schedular overdrive on and reduced the refresh rate to 10ms - seemed to improve - further testing needed
 
 
 <hr>
@@ -36,6 +38,7 @@
 * downloaded a binaural patch which works surprisingly good  
   http://jakobhandersen.dk/projects/fft-based-binaural-panner/download/
 * implemented the simple version with the sequencer
+  * signal vector size has to be set to 1024 and samplerate to 44.1k (in the audio settings)
   * so when a note is genereated, it generates random direction values
     * Azimuth -> 180° left/right (in 72 steps)
     * Elevation -> 360° front/up/back/down (in 127 steps)
