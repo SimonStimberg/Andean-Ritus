@@ -6,12 +6,15 @@
 
 * put the location parameters for each sound in the same sequencer instance  
   * (now in the extra1 and extra2 variables the X and Y values are stored)   
+
 * introduced makenote and midiformat nodes  
   * makenote gets pitch/velocity/duration  
     * generates a midi on command from that (pitch & velocity)  
     * and sends a midi off command after the duration is over (pitch & velocity = 0)  
+
 * put the listener position handling inside the Spatializer
   * so its tidier to have multiple Spatializer instances 
+
 * added a second synthesizer (bass)  
   * there are two from the live-instruments  
     * Bassline - more oldschool  
@@ -23,11 +26,13 @@
   * modified the random generator to follow certain rules  
     * if on a downbeat always choose the kick drum  
     * if not choose something else (HiHat/Snare/Toms)  
+  * here's a short descripton of all Pluggo for Live devices:  
+    https://docs.cycling74.com/max5/vignettes/core/live_resources_pluggo.html
     
 
 * found a good Perlin/Simplex Noise Package:  
   https://omimi.tanigami.wtf/get-smooth-with-ken-perlin-on-max-msp-337630ecd2ad  
-  * from the forum post
+  * from the forum post  
     https://cycling74.com/forums/smooth-random-numbers-like-perlin-noise  
   * has to be installed "manually" in the folder: ~/documents/Max8/packages
 
