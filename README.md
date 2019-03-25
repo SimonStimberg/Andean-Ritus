@@ -4,11 +4,11 @@
 
 ### 25. March 2019
 
-* found some Perlin/Simplex Noise Subpatches:
-  https://cycling74.com/forums/smooth-random-numbers-like-perlin-noise
+* found some Perlin/Simplex Noise Subpatches:  
+  https://cycling74.com/forums/smooth-random-numbers-like-perlin-noise  
   https://omimi.tanigami.wtf/get-smooth-with-ken-perlin-on-max-msp-337630ecd2ad
   
-* a list with MIDI notes to Piano Notes (was one octave off when tried)
+* a list with MIDI notes to Piano Notes (was one octave off when tried)  
   http://www.inspiredacoustics.com/en/MIDI_note_numbers_and_center_frequencies
 
 
