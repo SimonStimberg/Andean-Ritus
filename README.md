@@ -5,16 +5,13 @@
 ### 25. March 2019
 
 * put the location parameters for each sound in the same sequencer instance  
-  * (now in the extra1 and extra2 variables the X and Y values are stored)  
-  
+  * (now in the extra1 and extra2 variables the X and Y values are stored)   
 * introduced makenote and midiformat nodes  
   * makenote gets pitch/velocity/duration  
     * generates a midi on command from that (pitch & velocity)  
     * and sends a midi off command after the duration is over (pitch & velocity = 0)  
-    
 * put the listener position handling inside the Spatializer
   * so its tidier to have multiple Spatializer instances 
-
 * added a second synthesizer (bass)  
   * there are two from the live-instruments  
     * Bassline - more oldschool  
@@ -33,6 +30,7 @@
   * from the forum post
     https://cycling74.com/forums/smooth-random-numbers-like-perlin-noise  
   * has to be installed "manually" in the folder: ~/documents/Max8/packages
+
 * got acces to the parameters of the Additive Synthesizer
 * implemented the perlin noise to gradually shift the parameters / modulate the sound
   * sounds comme çi comme ça
