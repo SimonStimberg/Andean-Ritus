@@ -4,12 +4,46 @@
 
 ### 25. March 2019
 
-* found some Perlin/Simplex Noise Subpatches:  
-  https://cycling74.com/forums/smooth-random-numbers-like-perlin-noise  
-  https://omimi.tanigami.wtf/get-smooth-with-ken-perlin-on-max-msp-337630ecd2ad
+* put the location parameters for each sound in the same sequencer instance  
+  * (now in the extra1 and extra2 variables the X and Y values are stored)  
+  
+* introduced makenote and midiformat nodes  
+  * makenote gets pitch/velocity/duration  
+    * generates a midi on command from that (pitch & velocity)  
+    * and sends a midi off command after the duration is over (pitch & velocity = 0)  
+    
+* put the listener position handling inside the Spatializer
+  * so its tidier to have multiple Spatializer instances 
+
+* added a second synthesizer (bass)  
+  * there are two from the live-instruments  
+    * Bassline - more oldschool  
+    * Laverne - more 80ies (but has more parameters to control)  
+  * created a second Spatializer instance for it
+    * added a second OSC-command and a second Object in Unity to react to the 2nd synth
+
+* added a drum synthesizer  
+  * modified the random generator to follow certain rules  
+    * if on a downbeat always choose the kick drum  
+    * if not choose something else (HiHat/Snare/Toms)  
+    
+
+* found a good Perlin/Simplex Noise Package:  
+  https://omimi.tanigami.wtf/get-smooth-with-ken-perlin-on-max-msp-337630ecd2ad  
+  * from the forum post
+    https://cycling74.com/forums/smooth-random-numbers-like-perlin-noise  
+  * has to be installed "manually" in the folder: ~/documents/Max8/packages
+* got acces to the parameters of the Additive Synthesizer
+* implemented the perlin noise to gradually shift the parameters / modulate the sound
+  * sounds comme çi comme ça
+  
+* added a LowPass filter for the main monitor output  
+  * so in the headphones you hear everything  
+  * and via the monitors only the kick and bass frequencies - for the körperschall  
   
 * a list with MIDI notes to Piano Notes (was one octave off when tried)  
   http://www.inspiredacoustics.com/en/MIDI_note_numbers_and_center_frequencies
+
 
 
 <hr>
