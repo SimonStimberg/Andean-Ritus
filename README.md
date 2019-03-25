@@ -47,6 +47,9 @@
 * a list with MIDI notes to Piano Notes (was one octave off when tried)  
   http://www.inspiredacoustics.com/en/MIDI_note_numbers_and_center_frequencies
 
+* started to clone the project file in this git repository (for backup etc.)
+  * a cheatsheet / quick tutorial for all necessary git commands in terminal:  
+    https://rogerdudler.github.io/git-guide/index.de.html
 
 
 <hr>
