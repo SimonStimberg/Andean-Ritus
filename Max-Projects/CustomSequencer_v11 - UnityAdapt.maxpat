@@ -214,7 +214,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 163.5, 908.0, 95.0, 22.0 ],
-									"text" : "31.139266"
+									"text" : "38.826375"
 								}
 
 							}
@@ -299,7 +299,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 531.0, 913.0, 95.0, 22.0 ],
-									"text" : "7.962971"
+									"text" : "34.197339"
 								}
 
 							}
@@ -504,7 +504,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 159.5, 453.0, 128.0, 22.0 ],
-									"text" : "53.919318"
+									"text" : "68.228437"
 								}
 
 							}
@@ -588,7 +588,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 92.0, 114.0, 50.0, 22.0 ],
-									"text" : "43664"
+									"text" : "69718"
 								}
 
 							}
@@ -1431,30 +1431,30 @@
 							"origname" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"attack" : 7.962970733642578,
+									"attack" : 34.197338819503784,
 									"decay" : 105.0,
 									"env_curve" : -0.007086614173229,
-									"harm_num_2" : 64.0,
-									"harm_num_3" : 64.0,
-									"harm_num_4" : 64.0,
-									"harm_num_5" : 64.0,
+									"harm_num_2" : 77.0,
+									"harm_num_3" : 77.0,
+									"harm_num_4" : 77.0,
+									"harm_num_5" : 77.0,
 									"harm_num_6" : 64.0,
-									"harm_num_7" : 51.0,
-									"harm_num_8" : 51.0,
-									"harm_val_2" : 5.0,
-									"harm_val_3" : 5.0,
-									"harm_val_4" : 5.0,
-									"harm_val_5" : 5.0,
+									"harm_num_7" : 90.0,
+									"harm_num_8" : 90.0,
+									"harm_val_2" : 6.0,
+									"harm_val_3" : 6.0,
+									"harm_val_4" : 6.0,
+									"harm_val_5" : 6.0,
 									"harm_val_6" : 5.0,
-									"harm_val_7" : 4.0,
-									"harm_val_8" : 4.0,
-									"harmonic_2" : 64.0,
-									"harmonic_3" : 64.0,
-									"harmonic_4" : 64.0,
-									"harmonic_5" : 64.0,
+									"harm_val_7" : 7.02,
+									"harm_val_8" : 7.02,
+									"harmonic_2" : 76.800000000000011,
+									"harmonic_3" : 76.800000000000011,
+									"harmonic_4" : 76.800000000000011,
+									"harmonic_5" : 76.800000000000011,
 									"harmonic_6" : 64.0,
-									"harmonic_7" : 51.200000000000003,
-									"harmonic_8" : 51.200000000000003,
+									"harmonic_7" : 89.600000000000009,
+									"harmonic_8" : 89.600000000000009,
 									"level" : -0.5984251968504,
 									"pan_1" : -64.0,
 									"pan_2" : -64.0,
@@ -1465,25 +1465,25 @@
 									"pan_7" : -64.0,
 									"pan_8" : -64.0,
 									"polyphony" : 8.0,
-									"release" : 31.139265969395634,
+									"release" : 38.826375305652618,
 									"sustain" : 28.0,
 									"vol_harm" : 1.0,
-									"vol_num_1" : 70.0,
-									"vol_num_2" : 68.0,
-									"vol_num_3" : 66.0,
-									"vol_num_4" : 64.0,
-									"vol_num_5" : 61.0,
-									"vol_num_6" : 59.0,
-									"vol_num_7" : 56.0,
-									"vol_num_8" : 54.0,
-									"volume_1" : 70.497733768075705,
-									"volume_2" : 68.191063608974218,
-									"volume_3" : 65.867990661412477,
-									"volume_4" : 63.5,
-									"volume_5" : 61.130641335621476,
-									"volume_6" : 58.790249891579151,
-									"volume_7" : 56.422430969774723,
-									"volume_8" : 53.91931813955307
+									"vol_num_1" : 83.0,
+									"vol_num_2" : 79.0,
+									"vol_num_3" : 76.0,
+									"vol_num_4" : 73.0,
+									"vol_num_5" : 71.0,
+									"vol_num_6" : 68.0,
+									"vol_num_7" : 89.0,
+									"vol_num_8" : 86.0,
+									"volume_1" : 82.571173459291458,
+									"volume_2" : 79.315049156546593,
+									"volume_3" : 76.186907291412354,
+									"volume_4" : 73.293821595609188,
+									"volume_5" : 70.657404292374849,
+									"volume_6" : 68.228436607867479,
+									"volume_7" : 88.699050843715668,
+									"volume_8" : 85.76261579990387
 								}
 
 							}
@@ -1506,30 +1506,30 @@
 										"origname" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
 										"valuedictionary" : 										{
 											"parameter_values" : 											{
-												"attack" : 7.962970733642578,
+												"attack" : 34.197338819503784,
 												"decay" : 105.0,
 												"env_curve" : -0.007086614173229,
-												"harm_num_2" : 64.0,
-												"harm_num_3" : 64.0,
-												"harm_num_4" : 64.0,
-												"harm_num_5" : 64.0,
+												"harm_num_2" : 77.0,
+												"harm_num_3" : 77.0,
+												"harm_num_4" : 77.0,
+												"harm_num_5" : 77.0,
 												"harm_num_6" : 64.0,
-												"harm_num_7" : 51.0,
-												"harm_num_8" : 51.0,
-												"harm_val_2" : 5.0,
-												"harm_val_3" : 5.0,
-												"harm_val_4" : 5.0,
-												"harm_val_5" : 5.0,
+												"harm_num_7" : 90.0,
+												"harm_num_8" : 90.0,
+												"harm_val_2" : 6.0,
+												"harm_val_3" : 6.0,
+												"harm_val_4" : 6.0,
+												"harm_val_5" : 6.0,
 												"harm_val_6" : 5.0,
-												"harm_val_7" : 4.0,
-												"harm_val_8" : 4.0,
-												"harmonic_2" : 64.0,
-												"harmonic_3" : 64.0,
-												"harmonic_4" : 64.0,
-												"harmonic_5" : 64.0,
+												"harm_val_7" : 7.02,
+												"harm_val_8" : 7.02,
+												"harmonic_2" : 76.800000000000011,
+												"harmonic_3" : 76.800000000000011,
+												"harmonic_4" : 76.800000000000011,
+												"harmonic_5" : 76.800000000000011,
 												"harmonic_6" : 64.0,
-												"harmonic_7" : 51.200000000000003,
-												"harmonic_8" : 51.200000000000003,
+												"harmonic_7" : 89.600000000000009,
+												"harmonic_8" : 89.600000000000009,
 												"level" : -0.5984251968504,
 												"pan_1" : -64.0,
 												"pan_2" : -64.0,
@@ -1540,25 +1540,25 @@
 												"pan_7" : -64.0,
 												"pan_8" : -64.0,
 												"polyphony" : 8.0,
-												"release" : 31.139265969395634,
+												"release" : 38.826375305652618,
 												"sustain" : 28.0,
 												"vol_harm" : 1.0,
-												"vol_num_1" : 70.0,
-												"vol_num_2" : 68.0,
-												"vol_num_3" : 66.0,
-												"vol_num_4" : 64.0,
-												"vol_num_5" : 61.0,
-												"vol_num_6" : 59.0,
-												"vol_num_7" : 56.0,
-												"vol_num_8" : 54.0,
-												"volume_1" : 70.497733768075705,
-												"volume_2" : 68.191063608974218,
-												"volume_3" : 65.867990661412477,
-												"volume_4" : 63.5,
-												"volume_5" : 61.130641335621476,
-												"volume_6" : 58.790249891579151,
-												"volume_7" : 56.422430969774723,
-												"volume_8" : 53.91931813955307
+												"vol_num_1" : 83.0,
+												"vol_num_2" : 79.0,
+												"vol_num_3" : 76.0,
+												"vol_num_4" : 73.0,
+												"vol_num_5" : 71.0,
+												"vol_num_6" : 68.0,
+												"vol_num_7" : 89.0,
+												"vol_num_8" : 86.0,
+												"volume_1" : 82.571173459291458,
+												"volume_2" : 79.315049156546593,
+												"volume_3" : 76.186907291412354,
+												"volume_4" : 73.293821595609188,
+												"volume_5" : 70.657404292374849,
+												"volume_6" : 68.228436607867479,
+												"volume_7" : 88.699050843715668,
+												"volume_8" : 85.76261579990387
 											}
 
 										}
@@ -2569,7 +2569,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 654.0, 604.0, 392.0, 22.0 ],
-									"text" : "listenerRot 0.997569 0.023564 0.065562 0.065562"
+									"text" : "listenerRot -0.67727 0.058085 0.730755 0.730755"
 								}
 
 							}
@@ -2953,7 +2953,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 94.0, 608.0, 260.0, 22.0 ],
-									"text" : "soundPos 1.32 1.41 5."
+									"text" : "soundPos 7.98 10.41 5."
 								}
 
 							}
@@ -2967,7 +2967,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 371.0, 604.0, 260.0, 22.0 ],
-									"text" : "listenerPos -1.623467 -1.902556 5.994244"
+									"text" : "listenerPos 3.349185 -1.688723 2.406181"
 								}
 
 							}
@@ -3862,8 +3862,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1723.0, 686.0, 110.0, 22.0 ],
-					"text" : "scale 0 1000 0. 10."
+					"patching_rect" : [ 1723.0, 686.0, 121.0, 22.0 ],
+					"text" : "scale 0 1000 -15. 15."
 				}
 
 			}
@@ -3874,8 +3874,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1594.5, 686.0, 117.0, 22.0 ],
-					"text" : "scale 0. 1000. 0. 10."
+					"patching_rect" : [ 1594.5, 686.0, 127.0, 22.0 ],
+					"text" : "scale 0. 1000. -15. 15."
 				}
 
 			}
@@ -3984,7 +3984,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1774.0, 926.5, 199.0, 22.0 ],
-					"text" : "/obj2Pos 1.32 1.41 5."
+					"text" : "/obj2Pos 7.98 10.41 5."
 				}
 
 			}
@@ -5618,7 +5618,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1318.0, 926.5, 199.0, 22.0 ],
-					"text" : "/obj1Pos 0. 0. 2."
+					"text" : "/obj1Pos 1.822 -2.91 2."
 				}
 
 			}
@@ -5653,8 +5653,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1205.5, 680.0, 110.0, 22.0 ],
-					"text" : "scale 0 1000 0. 10."
+					"patching_rect" : [ 1205.5, 680.0, 121.0, 22.0 ],
+					"text" : "scale 0 1000 -15. 15."
 				}
 
 			}
@@ -5665,8 +5665,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1021.0, 680.0, 117.0, 22.0 ],
-					"text" : "scale 0. 1000. 0. 10."
+					"patching_rect" : [ 1021.0, 680.0, 110.0, 22.0 ],
+					"text" : "scale 0. 1000. 1. 3."
 				}
 
 			}
@@ -5902,7 +5902,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 654.0, 604.0, 392.0, 22.0 ],
-									"text" : "listenerRot 0.997569 0.023564 0.065562 0.065562"
+									"text" : "listenerRot -0.67727 0.058085 0.730755 0.730755"
 								}
 
 							}
@@ -6286,7 +6286,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 94.0, 608.0, 260.0, 22.0 ],
-									"text" : "soundPos 0. 0. 2."
+									"text" : "soundPos 1.822 -2.91 2."
 								}
 
 							}
@@ -6300,7 +6300,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 371.0, 604.0, 260.0, 22.0 ],
-									"text" : "listenerPos -1.623467 -1.902556 5.994244"
+									"text" : "listenerPos 3.349185 -1.688723 2.406181"
 								}
 
 							}
