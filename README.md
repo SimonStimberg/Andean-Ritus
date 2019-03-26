@@ -17,9 +17,10 @@
 * implemented the OSC send and receive script into the 360° scene - works flawless
   * comibined it with mirroring objects, but it doesn't work so well if objects rapidly appear and disappear
   * maybe better to have some things to stay in their place
+  * added a script which makes the mirrors always face the player  
+    unfortunately they do not only rotate around the y-axis - maybe better to fix this somehow
 
-
-* implemented the Perlin Noise deformation script from the Bauhausuni Weimar to morph a sphere according to the input  
+* implemented the Perlin Noise deformation script from the Bauhaus-Uni Weimar to morph a sphere according to the input  
   https://www.uni-weimar.de/kunst-und-gestaltung/wiki/GMU:Tutorials/Visual_Interaction/How_to_Control_Unity_with_MaxMsp
 
 
