@@ -1,6 +1,31 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
+### 26. March 2019
+
+* cleaned up the Unity project and deleted all unnecessary assets  
+  also the post-processing package - best to be installed fresh because of the version issue
+  
+* searched for more suitable 360°-Videos for the backdrop  
+* found a way to download videos from youtube in equirectangular version without their cubemap reencoding  
+  * use the commandline tool youtube-dl for this and add --user-agent  
+    more info: https://github.com/rg3/youtube-dl/issues/15267  
+* but its hard to find videos that look awsome and stay at one position and which make sense combinig it with the terrain
+* looks like the first one (PebbleBeach) works still best
+  * got to get rid of the watermarks though
+  
+* implemented the OSC send and receive script into the 360° scene - works flawless
+* comibined it with mirroring objects, but it doesn't work so well if objects rapidly appear and disappear
+* maybe better to have some things to stay in their place
+
+
+* implemented the Perlin Noise deformation script from the Bauhausuni Weimar to morph a sphere according to the input  
+  https://www.uni-weimar.de/kunst-und-gestaltung/wiki/GMU:Tutorials/Visual_Interaction/How_to_Control_Unity_with_MaxMsp
+
+
+<hr>
+<br>
+
 
 ### 25. March 2019
 
