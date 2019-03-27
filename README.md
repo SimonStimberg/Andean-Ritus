@@ -1,6 +1,31 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
+### 27. March 2019
+
+* searched for a alternative to the unity sphere, because it doesn't behave very smoothly while transforming
+  * mainly because it has to few vertices
+  * found out, there are different types of spheres
+    1. UV spheres with latitude and longitude distribution - disadvantage: has poles, where the vertices are dense - on the equatro there are few
+    2. IcoSpheres, which consist of even distributed triangles
+* found a script that generates a IcoSphere  
+  https://gamedev.stackexchange.com/questions/166468/how-do-i-generate-a-sphere-mesh-in-unity
+  * which builds on this script  
+    http://wiki.unity3d.com/index.php/ProceduralPrimitives#C.23_-_IcoSphere
+    * which derives from this  
+      http://blog.andreaskahler.com/2009/06/creating-icosphere-mesh-in-code.html
+* anyway, managed to implement it - behaves way smoother while transformed with the perlin noise distortion
+* edited the script, so you can drop it on a sphere (or a empty GameObject with a MeshFilter+Renderer) and it does the Rest
+  * added a public variable which controls the refinement of the mesh (Level of Recursion)
+  * the higher the smoother - but needs also more performance
+  * seems like 4 recursions is the best compromise for the distortion (needs to be tested with multiple instances)
+
+
+<hr>
+<br>
+
+
+
 ### 26. March 2019
 
 * cleaned up the Unity project and deleted all unnecessary assets  
