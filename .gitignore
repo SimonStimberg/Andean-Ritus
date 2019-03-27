@@ -1,0 +1,17 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+Unity-Projects/AndeanRitus_Clean_v02/Library/
+Unity-Projects/AndeanRitus_Clean_v02/obj/
+Unity-Projects/AndeanRitus_Clean_v02/Assets/360-Video/Videos/*
+Unity-Projects/AndeanRitus_Clean_v02/Assets/Materials/Rocks\ Pack/*
+
+Max-Projects/HRTFmatrixFiles/*
