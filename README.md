@@ -3,6 +3,10 @@
 
 ### 27. March 2019
 
+* added a reflection probe to the objects with mercury material (simple mirroring due to max metallic)  
+  now the whole enviroment is mirrored and not only the skybox
+  * A reflection probe can be added via (GameObject>Light>Reflection Probe).
+
 * searched for a alternative to the unity sphere, because it doesn't behave very smoothly while transforming
   * mainly because it has to few vertices
   * found out, there are different types of spheres
