@@ -5,6 +5,10 @@
 ### 28. March 2019
 
 ported the project to FilmUni's Computer  
+Vive worked immediately and marvelous!  
+(without any SDKs in the project implemented - maybe thanks to the computer/unity configuration)  
+camera position + rotation readout seem to work fine, too.  
+
 issues:  
 * Max-Patch: Perlin Noise Externel not working - is written for Mac only - got to find alternative
 * Binaural Panner didn't work - Java Virtual Machine required -> ask Stefan to install on PCs
