@@ -1,6 +1,31 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
+
+### 28. March 2019
+
+ported the project to FilmUni's Computer  
+issues:  
+* Max-Patch: Perlin Noise Externel not working - is written for Mac only - got to find alternative
+* Binaural Panner didn't work - Java Virtual Machine required -> ask Stefan to install on PCs
+
+used portable Version of Git to clone Repo on Uni Pc - worked fine so far  
+https://git-scm.com/download/win
+
+added multiple IcoSpheres - one for each sequencer step  
+made MAX send step number and pitch value  
+edited the noise deform script so far, that it receives the step value (via OSC Receiver)  
+assigned every sphere to one step -> is morphing in sync  
+looks nice - but not that spectacular...
+
+
+
+
+<hr>
+<br>
+
+
+
 ### 27. March 2019
 
 * added a reflection probe to the objects with mercury material (simple mirroring due to max metallic)  
