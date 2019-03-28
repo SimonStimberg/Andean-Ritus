@@ -4,9 +4,6 @@ public var sendToPort : int = 9000;
 public var listenerPort : int = 8000;
 
 
-public var step : int;
-public var pitch : int;
-
 private var valX : float;
 private var valY : float;
 private var valZ : float;
@@ -82,7 +79,7 @@ function Update()
         oscM = Osc.StringToOscMessage(cameraPos);
         oscHandler.Send(oscM);
                
-        // Debug.Log(cameraPos);        
+        Debug.Log(cameraPos);        
         // Debug.Log(cameraRot);
     // } 
 
@@ -109,17 +106,13 @@ public function AllMessageHandler(msg: OscMessage){
 
             // extract the data
             
-            step = values[0];
-
-            pitch = values[1];
-
-            valX = values[2];
+            valX = values[0];
             // valX -= 5.0f;
 
-            valZ = values[3];
+            valZ = values[1];
             // valZ -= 5.0f;
 
-            valY = values[4];
+            valY = values[2];
 
             // log the data
 
@@ -127,7 +120,7 @@ public function AllMessageHandler(msg: OscMessage){
             //       "Object1: \nX = " + valX + "  Y = " + valY + "  Z = " + valZ
             // );
 
-            Debug.Log(step);
+            // Debug.Log(valX);
 
             break;
         
