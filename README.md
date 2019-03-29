@@ -4,7 +4,28 @@
 ### 29. March 2019
 
 Unlit Distortion Shader!!  
-http://tinkering.ee/unity/asset-unity-refractive-shader/
+http://tinkering.ee/unity/asset-unity-refractive-shader/  
+works pretty good! - made it to be trippyyy  
+also able to manipulate custom parameters at runtime  
+
+
+but the syntax in the shader code is quite akward  
+* in the Properties class it must be declared first
+  `_MyFloat ("Float Name", Float) = 200.0`
+* in the Pass class it must then somehow be recalled/converted (?)
+  float _Myfloat;
+* and can then be used in the calculation
+
+* while in the material the variable appears with the name declared in parenthesis -> "Float Name"
+  to address it in the script you have to use the shader-variable-name "_MyFloat"
+  `rend.material.SetFloat("_MyFLoat", valueToHandOver);`
+  
+
+##### more Information
+https://answers.unity.com/questions/684089/change-shader-property-at-runtime-1.html  
+https://docs.unity3d.com/Manual/SL-PropertiesInPrograms.html  
+https://docs.unity3d.com/Manual/SL-Properties.html  
+https://docs.unity3d.com/Manual/ShadersOverview.html  
 
 
 could be interesting, Tutotial by Unity:  
