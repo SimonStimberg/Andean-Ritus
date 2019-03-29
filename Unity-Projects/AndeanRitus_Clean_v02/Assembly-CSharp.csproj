@@ -52,16 +52,20 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\360-Video\Shaders\SkyboxPanoramicShader-master\SkyboxPanoramicBetaShaderGUI.cs" />
-     <Compile Include="Assets\LookAtTarget.cs" />
      <Compile Include="Assets\Materials\MirrorMaterial\MirrorReflection.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\IcoSphere\GeneratePlanet.cs" />
      <Compile Include="Assets\Scripts\IcoSphere\IcoSphere.cs" />
+     <Compile Include="Assets\Scripts\LookAtTarget.cs" />
+     <Compile Include="Assets\Scripts\ShaderManipulator.cs" />
      <Compile Include="Assets\Scripts\worldmorph.cs" />
      <Compile Include="Assets\Scripts\worldmorph1.cs" />
+     <None Include="Assets\Shaders\Distortion_InsideOut.shader" />
+     <None Include="Assets\Shaders\Distortion.shader" />
      <None Include="Assets\Shaders\Tesselation.shader" />
      <None Include="Assets\360-Video\Shaders\SkyboxPanoramicShader-master\Skybox-PanoramicBeta.shader" />
      <None Include="Assets\Materials\MirrorMaterial\MirrorShader.shader" />
+     <None Include="Assets\Shaders\Distortion_BackUp.shader" />
      <None Include="Assets\360-Video\Shaders\InsideVisible.shader" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>/Volumes/Cache/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
