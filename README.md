@@ -11,14 +11,14 @@ also able to manipulate custom parameters at runtime
 
 
 but the syntax in the shader code is quite awkward  
-* in the Properties class it must be declared first
-  `_MyFloat ("Float Name", Float) = 200.0`
-* in the Pass class it must then somehow be recalled/converted (?)
-  float _Myfloat;
-* and can then be used in the calculation
+* in the Properties class it must be declared first  
+  `_MyFloat ("Float Name", Float) = 200.0`  
+* in the Pass class it must then somehow be recalled/converted (?)  
+  `float _Myfloat;`  
+* and can then be used in the calculation  
 
-* while in the material the variable appears with the name declared in parenthesis -> "Float Name"
-  to address it in the script you have to use the shader-variable-name "_MyFloat"
+* while in the material the variable appears with the name declared in parenthesis -> `"Float Name"`  
+  to address it in the script you have to use the shader-variable-name `_MyFloat`  
   `rend.material.SetFloat("_MyFLoat", valueToHandOver);`
   
 
