@@ -17,7 +17,7 @@ but the syntax in the shader code is quite awkward
   `float _Myfloat;`  
 * and can then be used in the calculation  
 
-* while in the material the variable appears with the name declared in parenthesis -> `"Float Name"`  
+* while in the Inspector for the material the variable appears with the name declared in parenthesis -> `"Float Name"`  
   to address it in the script you have to use the shader-variable-name `_MyFloat`  
   `rend.material.SetFloat("_MyFLoat", valueToHandOver);`
   
