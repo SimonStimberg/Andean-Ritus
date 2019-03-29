@@ -3,13 +3,14 @@
 
 ### 29. March 2019
 
+implemented trippy visual distortions, by using this  
 Unlit Distortion Shader!!  
 http://tinkering.ee/unity/asset-unity-refractive-shader/  
-works pretty good! - made it to be trippyyy  
+works pretty good!    
 also able to manipulate custom parameters at runtime  
 
 
-but the syntax in the shader code is quite akward  
+but the syntax in the shader code is quite awkward  
 * in the Properties class it must be declared first
   `_MyFloat ("Float Name", Float) = 200.0`
 * in the Pass class it must then somehow be recalled/converted (?)
