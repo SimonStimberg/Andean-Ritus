@@ -1,6 +1,30 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
+### 29. March 2019
+
+Unlit Distortion Shader!!  
+http://tinkering.ee/unity/asset-unity-refractive-shader/
+
+
+could be interesting, Tutotial by Unity:  
+Anatomy Of An Unlit Shader  
+https://unity3d.com/de/learn/tutorials/topics/graphics/anatomy-unlit-shader
+
+
+##### Other Resources
+
+High Definition Render Pipeline  
+https://blog.theknightsofunity.com/high-definition-render-pipeline-lit-shader-in-action-part-1/
+
+
+Making a Shockwave/heatwave/ripple effect shader - DIDNT WORK  
+https://www.reddit.com/r/Unity3D/comments/524z24/making_a_shockwaveheatwaveripple_effect_shader/
+
+
+<hr>
+<br>
+
 
 ### 28. March 2019
 
