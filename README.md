@@ -4,13 +4,13 @@
 ### 29. March 2019
 
 ##### added Post Processing Stack
-don't use the one from the Asset Store (version 1) - download the most recent from GitHub (v2):
+don't use the one from the Asset Store (version 1) - download the most recent from GitHub (v2):  
 https://github.com/Unity-Technologies/PostProcessing  
 
 
 * to make it work a **Post Process Layer** instance has to be placed on the camera, which receives the effects (also AntiAliasing can be enabled there)  
-  Layer has to be choosed the one the camera is on  
-* then and a **Post Process Volume** has to be placed somewhere (on the camera or somewhere else)
+  the Layer has to be choosed the one the camera is on (Important!)    
+* then and a **Post Process Volume** has to be placed somewhere (on the camera or somewhere else)  
   there the Effects are configured  
   Is Global should be turned on  
   Weight has to be at 1 to be fully visible
@@ -44,7 +44,7 @@ https://answers.unity.com/questions/48874/accessing-javascript-variable-from-c-a
 http://www.41post.com/1935/programming/unity3d-js-cs-or-cs-js-access  
 
 
-a good tutorial to acces other scripts variables in general:
+a good tutorial to acces other scripts variables in general:  
 http://unitylore.com/articles/script-communication/
 
 
