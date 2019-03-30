@@ -3,6 +3,56 @@
 
 ### 29. March 2019
 
+##### added Post Processing Stack
+don't use the one from the Asset Store (version 1) - download the most recent from GitHub (v2):
+https://github.com/Unity-Technologies/PostProcessing  
+
+
+* to make it work a **Post Process Layer** instance has to be placed on the camera, which receives the effects (also AntiAliasing can be enabled there)  
+  Layer has to be choosed the one the camera is on  
+* then and a **Post Process Volume** has to be placed somewhere (on the camera or somewhere else)
+  there the Effects are configured  
+  Is Global should be turned on  
+  Weight has to be at 1 to be fully visible
+  
+To manipulate the Stack in runtime, this worked:  
+https://github.com/Unity-Technologies/PostProcessing/wiki/Manipulating-the-Stack
+
+
+more Information + Manual for using:  
+https://github.com/Unity-Technologies/PostProcessing/wiki
+
+
+##### NOTE:
+Motion Blur is supposed not to work with VR!  
+if it shows no effect in GameMode, turn VR Supported off under  
+Project Settings -> Player -> XR Settings
+
+
+
+##### installed DOTween
+make smooth transitions in scripting - could be useful  
+installed via Asset store  
+Website: http://dotween.demigiant.com/
+
+
+##### Javascript VS C#
+in a C# script it doesn't work to get variables from a JS script  
+because C#s are always compiled BEFORE JSs  
+if you put the JS into the Plugin Folder they are compiled at the very beginning (but this messed up the other scripts)  
+https://answers.unity.com/questions/48874/accessing-javascript-variable-from-c-and-vice-vers.html  
+http://www.41post.com/1935/programming/unity3d-js-cs-or-cs-js-access  
+
+
+a good tutorial to acces other scripts variables in general:
+http://unitylore.com/articles/script-communication/
+
+
+<hr>
+<br>
+
+### 29. March 2019
+
 implemented trippy visual distortions, by using this  
 Unlit Distortion Shader!!  
 http://tinkering.ee/unity/asset-unity-refractive-shader/  
