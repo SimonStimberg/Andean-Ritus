@@ -228,6 +228,19 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>/Users/stimberg/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Unity-Projects/AndeanRitus_Clean_v02/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.Postprocessing.Runtime.Tests.csproj">
+      <Project>{1FDAF7A8-03ED-06C3-5F16-42703AEC71C2}</Project>      <Name>Unity.Postprocessing.Runtime.Tests</Name>    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
+      <Project>{D95D0FF2-9503-55DA-B52F-6E74FDC9D61D}</Project>      <Name>Unity.Postprocessing.Editor</Name>    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
+      <Project>{9936344B-BDA1-7549-D7EF-8522C5F4BA78}</Project>      <Name>Unity.Postprocessing.Runtime</Name>    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Editor.Tests.csproj">
+      <Project>{274625F1-1BA8-C672-EFE3-50AB7A3A90BB}</Project>      <Name>Unity.Postprocessing.Editor.Tests</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

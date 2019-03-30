@@ -52,21 +52,93 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\360-Video\Shaders\SkyboxPanoramicShader-master\SkyboxPanoramicBetaShaderGUI.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
      <Compile Include="Assets\Materials\MirrorMaterial\MirrorReflection.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\IcoSphere\GeneratePlanet.cs" />
      <Compile Include="Assets\Scripts\IcoSphere\IcoSphere.cs" />
      <Compile Include="Assets\Scripts\LookAtTarget.cs" />
+     <Compile Include="Assets\Scripts\Obsolete\PostProManipulator.cs" />
+     <Compile Include="Assets\Scripts\PostProDynamic.cs" />
      <Compile Include="Assets\Scripts\ShaderManipulator.cs" />
      <Compile Include="Assets\Scripts\worldmorph.cs" />
      <Compile Include="Assets\Scripts\worldmorph1.cs" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\FinalPass.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Waveform.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Uber.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Texture3DLerp.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\CopyStd.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Bloom.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\CopyStdFromDoubleWide.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\xRLib.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\Switch.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVOUpsample.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\PSSL.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Vectorscope.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\GaussianDownsample.compute" />
      <None Include="Assets\Shaders\Distortion_InsideOut.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ScreenSpaceReflections.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DepthOfField.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DiscardAlpha.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Lut3DBaker.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Dithering.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Colors.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\Vulkan.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\GrainBaker.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ExposureHistogram.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\LightMeter.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\D3D12.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\OpenGL.hlsl" />
      <None Include="Assets\Shaders\Distortion.shader" />
      <None Include="Assets\Shaders\Tesselation.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DiskKernels.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVODownsample2.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ScalableAO.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\ACES.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVODownsample1.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\StdLib.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVO.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DepthOfField.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\FastApproximateAntialiasing.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Fog.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVORender.compute" />
      <None Include="Assets\360-Video\Shaders\SkyboxPanoramicShader-master\Skybox-PanoramicBeta.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ScalableAO.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasing.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MotionBlur.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasing.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Texture2DLerp.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DeferredFog.shader" />
      <None Include="Assets\Materials\MirrorMaterial\MirrorShader.shader" />
+     <None Include="Assets\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\CopyStdFromTexArray.shader" />
      <None Include="Assets\Shaders\Distortion_BackUp.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\D3D9.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Lut2DBaker.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\AutoExposure.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Overlays.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\Metal.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Distortion.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Vectorscope.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\TemporalAntialiasing.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasingBridge.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ScreenSpaceReflections.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Copy.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\D3D11.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Waveform.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\XboxOne.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Sampling.hlsl" />
      <None Include="Assets\360-Video\Shaders\InsideVisible.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\PSP2.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Histogram.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Histogram.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ExposureHistogram.compute" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>/Volumes/Cache/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>
@@ -241,10 +313,21 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>/Users/stimberg/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Unity-Projects/AndeanRitus_Clean_v02/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{6BED2BA5-2FB7-9998-2B37-C79F35264A10}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Runtime.Tests.csproj">
+      <Project>{1FDAF7A8-03ED-06C3-5F16-42703AEC71C2}</Project>      <Name>Unity.Postprocessing.Runtime.Tests</Name>    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
+      <Project>{D95D0FF2-9503-55DA-B52F-6E74FDC9D61D}</Project>      <Name>Unity.Postprocessing.Editor</Name>    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
+      <Project>{9936344B-BDA1-7549-D7EF-8522C5F4BA78}</Project>      <Name>Unity.Postprocessing.Runtime</Name>    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Editor.Tests.csproj">
+      <Project>{274625F1-1BA8-C672-EFE3-50AB7A3A90BB}</Project>      <Name>Unity.Postprocessing.Editor.Tests</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

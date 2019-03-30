@@ -49,6 +49,11 @@ function Update()
 {
     //Debug.LogWarning("time = " + Time.time);
     NoiseIntensity = valX;
+    
+    // feed the PostPro Volume with the momentary step
+    // a JS-Script can't grab from a C# Script, because C#s are always compiled before JSs
+    // therefore it has to be fed
+    GameObject.Find("PP-Volume").GetComponent("PostProDynamic").getStep = step;
 
 
 
