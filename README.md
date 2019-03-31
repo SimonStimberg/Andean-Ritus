@@ -1,7 +1,15 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
-### 29. March 2019
+### 31. March 2019
+
+MAX: replaced the perlin objects (mac only) with max own drunk objects and adjusted random generation  
+other alternative: using the Jitter Simplex Noise function.
+
+<hr>
+<br>
+
+### 30. March 2019
 
 ##### added Post Processing Stack
 don't use the one from the Asset Store (version 1) - download the most recent from GitHub (v2):  
