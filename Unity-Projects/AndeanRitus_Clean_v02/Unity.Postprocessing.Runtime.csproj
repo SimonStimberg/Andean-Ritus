@@ -309,6 +309,12 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Volumes/Cache/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Unity-Projects/AndeanRitus_Clean_v02/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Unity-Projects/AndeanRitus_Clean_v02/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Users/stimberg/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -326,12 +332,6 @@
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>/Users/stimberg/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="DOTweenEditor">
- <HintPath>/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Unity-Projects/AndeanRitus_Clean_v02/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
- </Reference>
- <Reference Include="DOTween">
- <HintPath>/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Unity-Projects/AndeanRitus_Clean_v02/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

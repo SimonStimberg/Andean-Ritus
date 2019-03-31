@@ -362,7 +362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &239973476
 GameObject:
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &511623550
 GameObject:
@@ -1216,7 +1216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &582314895
 GameObject:
@@ -1351,7 +1351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &791581394
 GameObject:
@@ -1639,7 +1639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &1053376500
 GameObject:
@@ -1944,7 +1944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &1159370546
 GameObject:
@@ -2130,7 +2130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &1192977154
 GameObject:
@@ -2232,7 +2232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &1222510125
 GameObject:
@@ -2575,7 +2575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &1630088712
 GameObject:
@@ -2926,7 +2926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &1732729633
 GameObject:
@@ -3028,7 +3028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &1750407884
 GameObject:
@@ -3201,7 +3201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &1809762030
 GameObject:
@@ -3983,7 +3983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &2032297740
 GameObject:
@@ -4072,7 +4072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!4 &2032297745
 Transform:
@@ -4346,7 +4346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
 --- !u!1 &2140292068
 GameObject:
@@ -4448,5 +4448,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetMaterial: {fileID: 2100000, guid: 1ce0963ff2ce626439cc3b3040f3369c, type: 2}
-  planetSize: 0.5
+  planetSize: 0.3
   levelOfRefinement: 3
