@@ -9,6 +9,13 @@ ehthumbs.db
 Thumbs.db
 
 
+# Visual Studio Code Files #
+############################
+.vs
+.vscode
+
+
+
 Unity-Projects/AndeanRitus_Clean_v02/Library/
 Unity-Projects/AndeanRitus_Clean_v02/obj/
 Unity-Projects/AndeanRitus_Clean_v02/Assets/360-Video/Videos/*

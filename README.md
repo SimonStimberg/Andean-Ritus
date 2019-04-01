@@ -1,6 +1,110 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
+### 31. March 2019
+
+MAX: replaced the perlin objects (mac only) with max own drunk objects and adjusted random generation  
+other alternative: using the Jitter Simplex Noise function.
+
+<hr>
+<br>
+
+### 30. March 2019
+
+##### added Post Processing Stack
+don't use the one from the Asset Store (version 1) - download the most recent from GitHub (v2):  
+https://github.com/Unity-Technologies/PostProcessing  
+
+
+* to make it work a **Post Process Layer** instance has to be placed on the camera, which receives the effects (also AntiAliasing can be enabled there)  
+  the Layer has to be choosed the one the camera is on (Important!)    
+* then and a **Post Process Volume** has to be placed somewhere (on the camera or somewhere else)  
+  there the Effects are configured  
+  Is Global should be turned on  
+  Weight has to be at 1 to be fully visible
+  
+To manipulate the Stack in runtime, this worked:  
+https://github.com/Unity-Technologies/PostProcessing/wiki/Manipulating-the-Stack
+
+
+more Information + Manual for using:  
+https://github.com/Unity-Technologies/PostProcessing/wiki
+
+
+##### NOTE:
+Motion Blur is supposed not to work with VR!  
+if it shows no effect in GameMode, turn VR Supported off under  
+Project Settings -> Player -> XR Settings
+
+
+
+##### installed DOTween
+make smooth transitions in scripting - could be useful  
+installed via Asset store  
+Website: http://dotween.demigiant.com/
+
+
+##### Javascript VS C#
+in a C# script it doesn't work to get variables from a JS script  
+because C#s are always compiled BEFORE JSs  
+if you put the JS into the Plugin Folder they are compiled at the very beginning (but this messed up the other scripts)  
+https://answers.unity.com/questions/48874/accessing-javascript-variable-from-c-and-vice-vers.html  
+http://www.41post.com/1935/programming/unity3d-js-cs-or-cs-js-access  
+
+
+a good tutorial to acces other scripts variables in general:  
+http://unitylore.com/articles/script-communication/
+
+
+<hr>
+<br>
+
+### 29. March 2019
+
+implemented trippy visual distortions, by using this  
+Unlit Distortion Shader!!  
+http://tinkering.ee/unity/asset-unity-refractive-shader/  
+works pretty good!    
+also able to manipulate custom parameters at runtime  
+
+
+but the syntax in the shader code is quite awkward  
+* in the Properties class it must be declared first  
+  `_MyFloat ("Float Name", Float) = 200.0`  
+* in the Pass class it must then somehow be recalled/converted (?)  
+  `float _Myfloat;`  
+* and can then be used in the calculation  
+
+* while in the Inspector for the material the variable appears with the name declared in parenthesis -> `"Float Name"`  
+  to address it in the script you have to use the shader-variable-name `_MyFloat`  
+  `rend.material.SetFloat("_MyFLoat", valueToHandOver);`
+  
+
+##### more Information
+https://answers.unity.com/questions/684089/change-shader-property-at-runtime-1.html  
+https://docs.unity3d.com/Manual/SL-PropertiesInPrograms.html  
+https://docs.unity3d.com/Manual/SL-Properties.html  
+https://docs.unity3d.com/Manual/ShadersOverview.html  
+
+
+could be interesting, Tutotial by Unity:  
+Anatomy Of An Unlit Shader  
+https://unity3d.com/de/learn/tutorials/topics/graphics/anatomy-unlit-shader
+
+
+##### Other Resources
+
+High Definition Render Pipeline  
+https://blog.theknightsofunity.com/high-definition-render-pipeline-lit-shader-in-action-part-1/
+
+
+Making a Shockwave/heatwave/ripple effect shader - DIDNT WORK  
+https://www.reddit.com/r/Unity3D/comments/524z24/making_a_shockwaveheatwaveripple_effect_shader/
+
+
+<hr>
+<br>
+
 
 ### 28. March 2019
 

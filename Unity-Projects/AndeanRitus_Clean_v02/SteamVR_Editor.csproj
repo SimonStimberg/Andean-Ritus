@@ -297,6 +297,12 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="DOTween">
+ <HintPath>E:/Student Files/Simon/GitRepo/Andean-Ritus/Unity-Projects/AndeanRitus_Clean_v02/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>E:/Student Files/Simon/GitRepo/Andean-Ritus/Unity-Projects/AndeanRitus_Clean_v02/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
  <Reference Include="Valve.Newtonsoft.Json">
  <HintPath>E:/Student Files/Simon/GitRepo/Andean-Ritus/Unity-Projects/AndeanRitus_Clean_v02/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
  </Reference>
