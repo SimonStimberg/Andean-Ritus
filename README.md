@@ -5,6 +5,8 @@
 
 #### Testing in VR
 
+Works without SteamVR Asset installed (only VR turned on under Player Settings)
+
 Audio Spatialization
 * if one sequencer all 360° all around the viewer -> super confusing and disturbing + you wont see the object, because its disappeard before your eyes can follow your ears.
 * -> best to keep every synth locally restricted to an area that fits into the viewing field. depth shouldn't vary more than 2 or 3 metres, too
@@ -16,6 +18,8 @@ Post Processing Stack
 * Vignette the same
 * Color Grading / Hue shift would work basically, but looks a bit cheap  
   -> RGB channel shift would look nice eventually
+* AntiAliasing works quite good
+
   
 Morph Shader
 * is jittering on every movement of the camerea (some kind of readjustments of the shader?)  
