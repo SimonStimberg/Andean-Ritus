@@ -3,7 +3,7 @@
 
 ### 1. April 2019
 
-##### Testing in VR
+#### Testing in VR
 
 Audio Spatialization
 * if one sequencer all 360° all around the viewer -> super confusing and disturbing + you wont see the object, because its disappeard before your eyes can follow your ears.
@@ -24,12 +24,12 @@ Morph Shader
 * a whole sphere of this kind totally wrecks you
 
 
-##### Installed JAVA on FilmUni PC
+#### Installed JAVA on FilmUni PC
 somehow tricky to make it work
 * worked with the settings:  
   Used JAVA SE (JDK) 8.201
   installed in the path as descriped in this ReadMe:  
-  https://github.com/Cycling74/max-mxj/blob/master/README.md
+  https://github.com/Cycling74/max-mxj/blob/master/README.md  
   then MXJ objects worked - but not the spatial panner
 * had to install the vecmath.jar as noted on the plugins download page:
   http://jakobhandersen.dk/projects/fft-based-binaural-panner/download/
