@@ -35,6 +35,12 @@ somehow tricky to make it work
   http://jakobhandersen.dk/projects/fft-based-binaural-panner/download/
   
   
+#### Made Midi-Notes behave correctly in MAX
+* arranged the nodes in following order:  
+  makenote - pack - midiformat - midiflush  
+  (so the flush is not aside but inside the chain - killing notes seemed to work this way too)
+  
+  
 
 <hr>
 <br>
