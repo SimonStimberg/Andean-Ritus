@@ -1,6 +1,32 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
+### 1. April 2019
+
+##### Testing in VR
+
+Audio Spatialization
+* if one sequencer all 360° all around the viewer -> super confusing and disturbing + you wont see the object, because its disappeard before your eyes can follow your ears.
+* -> best to keep every synth locally restricted to an area that fits into the viewing field. depth shouldn't vary more than 2 or 3 metres, too
+* then also delay/doppler effect of the spatializer is working without detuning the notes -> better spatial orientation
+
+Post Processing Stack
+* Motion Blur indeed doesn't work in VR
+* Chromatic Aberration works but is not very effectful, because the effect just happens on the edges which is mostly out of the VR-viewing angle
+* Vignette the same
+* Color Grading / Hue shift would work basically, but looks a bit cheap  
+  -> RGB channel shift would look nice eventually
+  
+Morph Shader
+* is jittering on every movement of the camerea (some kind of readjustments of the shader?)  
+  this would have to be fixed, if used  
+  less is more
+  
+  
+
+<hr>
+<br>
+
 ### 31. March 2019
 
 MAX: replaced the perlin objects (mac only) with max own drunk objects and adjusted random generation  
