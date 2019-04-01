@@ -1,6 +1,54 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
+### 1. April 2019
+
+#### Testing in VR
+
+Works without SteamVR Asset installed (only VR turned on under Player Settings)
+
+Audio Spatialization
+* if one sequencer all 360° all around the viewer -> super confusing and disturbing + you wont see the object, because its disappeard before your eyes can follow your ears.
+* -> best to keep every synth locally restricted to an area that fits into the viewing field. depth shouldn't vary more than 2 or 3 metres, too
+* then also delay/doppler effect of the spatializer is working without detuning the notes -> better spatial orientation
+
+Post Processing Stack
+* Motion Blur indeed doesn't work in VR
+* Chromatic Aberration works but is not very effectful, because the effect just happens on the edges which is mostly out of the VR-viewing angle
+* Vignette the same
+* Color Grading / Hue shift would work basically, but looks a bit cheap  
+  -> RGB channel shift would look nice eventually
+* AntiAliasing works quite good
+
+  
+Morph Shader
+* is jittering on every movement of the camerea (some kind of readjustments of the shader?)  
+  this would have to be fixed, if used  
+  less is more
+* a whole sphere of this kind totally wrecks you
+
+
+#### Installed JAVA on FilmUni PC
+somehow tricky to make it work
+* worked with the settings:  
+  Used JAVA SE (JDK) 8.201
+  installed in the path as descriped in this ReadMe:  
+  https://github.com/Cycling74/max-mxj/blob/master/README.md  
+  then MXJ objects worked - but not the spatial panner
+* had to install the vecmath.jar as noted on the plugins download page:
+  http://jakobhandersen.dk/projects/fft-based-binaural-panner/download/
+  
+  
+#### Made Midi-Notes behave correctly in MAX
+* arranged the nodes in following order:  
+  makenote - pack - midiformat - midiflush  
+  (so the flush is not aside but inside the chain - killing notes seemed to work this way too)
+  
+  
+
+<hr>
+<br>
+
 ### 31. March 2019
 
 MAX: replaced the perlin objects (mac only) with max own drunk objects and adjusted random generation  
