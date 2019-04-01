@@ -21,6 +21,18 @@ Morph Shader
 * is jittering on every movement of the camerea (some kind of readjustments of the shader?)  
   this would have to be fixed, if used  
   less is more
+* a whole sphere of this kind totally wrecks you
+
+
+##### Installed JAVA on FilmUni PC
+somehow tricky to make it work
+* worked with the settings:  
+  Used JAVA SE (JDK) 8.201
+  installed in the path as descriped in this ReadMe:  
+  https://github.com/Cycling74/max-mxj/blob/master/README.md
+  then MXJ objects worked - but not the spatial panner
+* had to install the vecmath.jar as noted on the plugins download page:
+  http://jakobhandersen.dk/projects/fft-based-binaural-panner/download/
   
   
 
