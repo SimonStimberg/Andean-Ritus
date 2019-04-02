@@ -1,6 +1,34 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
+
+### 2. April 2019
+
+#### Max
+
+
+
+#### Unity: Trigger-Script
+wrote a script that triggers the creation of a new Mercury Sphere  
+* depending on a minimun time that has to pass  
+* and on the condition, that the velocity of the camera rotation measured over a certain time is below a certain level  
+  found helpful code here: https://forum.unity.com/threads/manually-calculate-angular-velocity-of-gameobject.289462/  
+  (used the code by BenZed (answer #18) - while #20 got a lot upvotes > could be checked if improvement is desired)
+  
+  
+the position of the new object is in the opposite direction of the viewing direction +/- 90° (randomly)  
+within a minimum radius distance to the viewers position (+ a bit random)  
+
+-> next step: feed max with the data and trigger a corresponding sound
+
+
+
+
+
+<hr>
+<br>
+
+
 ### 1. April 2019
 
 #### Testing in VR
