@@ -6,6 +6,14 @@
 
 #### Max
 
+made a prefab patch for random note generation  
+introduced 4 voices in different octaves - all controlling an additive synth (maybe just use the additive ones?)  
+checked longer loop steps (64, 32) but conclusion: not so nice  
+made a prefab for the positioning and OSC handling  
+
+made a snapshot of better drum settings  
+
+
 
 
 #### Unity: Trigger-Script
