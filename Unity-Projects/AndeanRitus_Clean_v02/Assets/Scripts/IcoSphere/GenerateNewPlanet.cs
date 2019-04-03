@@ -15,6 +15,8 @@ public class GenerateNewPlanet : MonoBehaviour
     MeshFilter planetMeshFilter;
     MeshCollider planetMeshCollider;
 
+    private int objCounter = 1;
+
     void Start () {
   
 		
@@ -31,6 +33,10 @@ public class GenerateNewPlanet : MonoBehaviour
     void CreatePlanetGameObject()
     {
         planet = new GameObject();
+
+        planet.name = "MysticalSphere"+objCounter;
+
+        objCounter++;
         
 
 

@@ -8,17 +8,22 @@ private var baseVertices : Vector3[];
 private var noise : Perlin;
 public var meNum : int = 0;
 private var intensityGlobal : float = 0.3;
+private var manager : OSCManager;
 
 function Start ()
 {
     noise = new Perlin ();
+    manager = GameObject.Find("OSC Receiver").GetComponent("OSCManager");
 }
 
 function Update () 
 {
     
-    var stepNow = GameObject.Find("OSC Receiver").GetComponent(OSCReceiver).step;
-    var pitchNow = GameObject.Find("OSC Receiver").GetComponent(OSCReceiver).pitch;
+    
+
+    // var csScript: YourCsScript = GetComponent(YourCsScript);
+    var stepNow = manager.step;
+    // var pitchNow = GameObject.Find("OSC Receiver").GetComponent(OSCManager).pitch;
 
     if(stepNow == meNum)
     {

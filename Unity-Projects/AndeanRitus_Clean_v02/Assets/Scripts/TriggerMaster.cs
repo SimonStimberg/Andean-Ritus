@@ -110,7 +110,7 @@ public class TriggerMaster : MonoBehaviour {
 		{
 			newAngle -= 360;
 		}
-		Debug.Log(m_MainCamera.transform.eulerAngles.y);
+		// Debug.Log(m_MainCamera.transform.eulerAngles.y);
 		
 		float varyDistance = spawnDistance + Random.Range(0.0f, 5.0f);
 
@@ -118,13 +118,13 @@ public class TriggerMaster : MonoBehaviour {
 		float newZ = m_MainCamera.transform.position.z + varyDistance * Mathf.Cos(newAngle * Mathf.Deg2Rad);
 		float newY = Random.Range(2.5f, 8.0f);
 
-		Debug.Log(newX + " / " + newZ);
+		// Debug.Log(newX + " / " + newZ);
 
 
 
 		this.GetComponent<GenerateNewPlanet>().CreatePlanet(newX, newY, newZ);
 
-		Debug.Log("You staring weirdo!");
+		// Debug.Log("You staring weirdo!");
 
 	}
 }

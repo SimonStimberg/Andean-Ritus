@@ -87,7 +87,7 @@ function Update()
         oscM = Osc.StringToOscMessage(cameraPos);
         oscHandler.Send(oscM);
                
-        // Debug.Log(cameraPos);        
+        Debug.Log(cameraPos);        
         // Debug.Log(cameraRot);
     // } 
 
