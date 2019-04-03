@@ -14,7 +14,7 @@ stored the old scripts in a backup folder in Unity-Projects
 look at the old OSCReceiver.js for how things were handled before  
 
 
-#### Store position information in list
+#### Max: Store position information in list
 use coll object to store things  
 read max tutorial no. 18 for deeper information  
 
