@@ -1,6 +1,28 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
+### 3. April 2019
+
+#### Unity: rewrote the OSC-Receiver Script in C#
+a loooot of hassle but finally it worked  
+receiving as well as sending  
+fortunately could rewrite the existing lite script, rather than using the heavy Touch OSC cs library  
+had to correct NoiseTransform as well  
+
+
+stored the old scripts in a backup folder in Unity-Projects  
+look at the old OSCReceiver.js for how things were handled before  
+
+
+#### Store position information in list
+use coll object to store things  
+read max tutorial no. 18 for deeper information  
+
+
+
+<hr>
+<br>
+
 
 ### 2. April 2019
 
