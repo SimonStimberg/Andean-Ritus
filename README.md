@@ -1,6 +1,57 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
+
+### 4. April 2019
+
+
+
+#### Max: build a new Note Generator
+that creates notes based on the input from unity (creation of spheres)  
+up to 64 notes possible (4 Synth voices * 16 sequencer steps)  
+the 4 synths play in 4 octaves  
+
+
+stores the spatial position in a coll-object  
+with the note only the number of the corresponding object is stored into the sequencer (as extra1 value)  
+recalls the data when the corresponding sound is played  
+and send the number of sound to unity to trigger the corresponding object  
+
+
+#### Max: adapted OSC-handling
+now there is one object sending all the note events to unity  
+sending the corresponding object number + pitch and velocity value
+
+
+adapted the receiver and the spatializer
+
+
+
+#### Unity: rewrote NoiseDeform javascript in C#
+based on similar script found in the web  
+(just google perlin noise deform unity c#)  
+had to rewrite because awkward communication problems between c# and js scripts  
+
+
+now the noise script is attached to every new object  
+if the noise value is increased by another script it lerps back to idle state  
+
+
+#### Unity: adapted the OSC-Manager
+to handle all incoming/outgoing signals  
+INTERESTING: from the message handler function its not possible to send to/feed the other scripts  
+(apparently, because it isnt running in the main thread, but on a level of initialisation  
+therefore it only works via updating global variables  
+and in the update function it has to check whether there are new values and distribute them from this position
+
+
+updated TriggerMaster as well to handle all the triggering
+
+
+<hr>
+<br>
+
+
 ### 3. April 2019
 
 #### Unity: rewrote the OSC-Receiver Script in C#
