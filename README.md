@@ -29,7 +29,8 @@ adapted the receiver and the spatializer
 
 #### Unity: rewrote NoiseDeform javascript in C#
 based on similar script found in the web  
-(just google perlin noise deform unity c#)  
+* saved as PerlinAnimateMesh in Script BackUps folder  
+* source (forum post) can be found: just google "perlin noise deform unity c#"  
 had to rewrite because awkward communication problems between c# and js scripts  
 
 
