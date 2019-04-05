@@ -15,7 +15,7 @@ public class GenerateNewPlanet : MonoBehaviour
     MeshFilter planetMeshFilter;
     MeshCollider planetMeshCollider;
 
-    private int objCounter = 1;
+    // private int objCounter = 1;
 
     void Start () {
   
@@ -23,20 +23,20 @@ public class GenerateNewPlanet : MonoBehaviour
 	}
 
 
-    public void CreatePlanet(float x, float y, float z)
+    public void CreatePlanet(int objCounter, float x, float y, float z)
     {
-        CreatePlanetGameObject();
+        CreatePlanetGameObject(objCounter);
         //do whatever else you need to do with the sphere mesh
         RecalculateMesh(x, y, z);
     }
 
-    void CreatePlanetGameObject()
+    void CreatePlanetGameObject(int objCounter)
     {
         planet = new GameObject();
 
         planet.name = "MysticalSphere"+objCounter;
 
-        objCounter++;
+        // objCounter++;
         
 
 
@@ -46,6 +46,10 @@ public class GenerateNewPlanet : MonoBehaviour
         planetMeshRenderer = planet.AddComponent<MeshRenderer>();
         //need to set the material up top
         planetMeshRenderer.material = planetMaterial;
+        planet.AddComponent<NoiseDeformer>();
+
+
+
         planet.transform.localScale = new Vector3(planetSize, planetSize, planetSize);
         IcoSphere.Create(planet, levelOfRefinement);
     }
@@ -57,6 +61,6 @@ public class GenerateNewPlanet : MonoBehaviour
         planetMesh.RecalculateNormals();
 
         planet.transform.position = new Vector3(x, y, z);
-        Debug.Log("Position: " + x + " " + y + " " + z);
+        // Debug.Log("Position: " + x + " " + y + " " + z);
     }
 }

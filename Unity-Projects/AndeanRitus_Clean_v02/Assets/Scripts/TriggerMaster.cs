@@ -8,10 +8,12 @@ public class TriggerMaster : MonoBehaviour {
 	public float triggerTime = 15.0f;
 	private float timeCount;
 	private bool triggerReady = false;
+	private bool manualTrigger = false;
 
 	private Camera m_MainCamera;
 
 	public float spawnDistance = 2.0f;
+	private int objCounter = 1;
 
 
 
@@ -48,6 +50,7 @@ public class TriggerMaster : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		sendCameraPos();
 
 		timeCount -= Time.deltaTime;
  
@@ -90,15 +93,33 @@ public class TriggerMaster : MonoBehaviour {
 			triggerNew();
 			triggerReady = false;
 			timeCount = triggerTime;
+			// manualTrigger = false;
 
 		}
 
 
 		// Debug.Log(m_MainCamera.transform.eulerAngles.y);
 
+		// if (Input.GetKey(KeyCode.Q))
+    	// {
+		// 	stimulate(2, 50, 50);
+		// 	Debug.Log("stimulated");
+		// }
+
 
 		
 	}
+
+	void sendCameraPos()
+	{
+		string cameraPos = m_MainCamera.transform.position.x + " " + m_MainCamera.transform.position.z + " " + m_MainCamera.transform.position.y + " " + m_MainCamera.transform.rotation.w + " " + m_MainCamera.transform.rotation.x + " " + m_MainCamera.transform.rotation.y + " " + m_MainCamera.transform.rotation.y;
+		GameObject.Find("OSC Receiver").GetComponent<OSCManager>().SendNewMessage("/mePos", cameraPos);
+
+
+	}
+
+
+
 
 	void triggerNew()
 	{
@@ -120,11 +141,27 @@ public class TriggerMaster : MonoBehaviour {
 
 		// Debug.Log(newX + " / " + newZ);
 
+		this.GetComponent<GenerateNewPlanet>().CreatePlanet(objCounter, newX, newY, newZ);
+
+		string newMsg = objCounter + " " + newX + " " + newZ + " " + newY;
+		GameObject.Find("OSC Receiver").GetComponent<OSCManager>().SendNewMessage("/createObj", newMsg);
+
+		objCounter++;
+
+		Debug.Log("/createObj " + newMsg);
 
 
-		this.GetComponent<GenerateNewPlanet>().CreatePlanet(newX, newY, newZ);
 
 		// Debug.Log("You staring weirdo!");
 
 	}
+
+	public void stimulate(int target, int pitch, int vel)
+	{
+		float noise = 7.0f;
+		GameObject.Find("MysticalSphere"+target).GetComponent<NoiseDeformer>().stimIntensity = noise;
+		Debug.Log("Stimulate No. " + target + " with " + pitch + " " + vel);
+	}
+
+
 }
