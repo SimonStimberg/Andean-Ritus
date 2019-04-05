@@ -4,8 +4,6 @@
 	{
 		_MainTex ("Texture", 2D) = "white" {}
 		_Manipulator ("Manipulator", Float) = 200.0
-		_Strength ("Strength", Float) = 0.1
-		_WaveLength ("Wavelength", Float) = 1.0
 	}
 	SubShader
 	{
@@ -53,8 +51,6 @@
 			sampler2D _MainTex;
 			float4 _MainTex_ST;
 			float _Manipulator;
-			float _Strength;
-			float _Wavelength;
 			
 			// builtin variable to get Grabbed Texture if GrabPass has no name
 			sampler2D _GrabTexture;
@@ -73,8 +69,7 @@
 			fixed4 frag(v2f i) : SV_TARGET{
 				fixed4 grab = tex2Dproj(
 					_GrabTexture, 
-					i.screenUV + float4( sin((_Time.x * _Manipulator) + i.screenUV.x * _Wavelength) * _Strength, 0, 0, 0)
-					// i.screenUV + float4( sin((_Time.x * _Manipulator)+i.screenUV.x*0.1)*0.1, sin((_Time.x * _Manipulator)+i.screenUV.x*0.1)*0.1, 0, 0)
+					i.screenUV + float4( sin((_Time.x * _Manipulator)+i.screenUV.x*4.0)*0.1, sin((_Time.x * _Manipulator)+i.screenUV.x*4.0)*0.1, 0, 0)
 				);
 				return grab;
 			}

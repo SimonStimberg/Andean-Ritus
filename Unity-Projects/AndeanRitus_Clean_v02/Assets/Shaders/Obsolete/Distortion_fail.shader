@@ -1,11 +1,15 @@
-﻿Shader "Unlit/Distortion"
+﻿Shader "Unlit/Distortion_fail"
 {
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
 		_Manipulator ("Manipulator", Float) = 200.0
-		_Strength ("Strength", Float) = 0.1
-		_WaveLength ("Wavelength", Float) = 1.0
+
+		_CenterX ("Center X", float) = 0
+        _CenterY ("Center Y", float) = 0
+        _Amount ("Amount", float) = 5
+        _WaveSpeed("Wave Speed", range(.50, 50)) = 20
+        _WaveAmount("Wave Amount", range(0, 20)) = 10
 	}
 	SubShader
 	{
@@ -53,11 +57,15 @@
 			sampler2D _MainTex;
 			float4 _MainTex_ST;
 			float _Manipulator;
-			float _Strength;
-			float _Wavelength;
 			
 			// builtin variable to get Grabbed Texture if GrabPass has no name
 			sampler2D _GrabTexture;
+
+			float _CenterX;
+            float _CenterY;
+            float _Amount;
+            float _WaveSpeed;
+            float _WaveAmount;
 			
 			v2f vert (appdata v)
 			{
@@ -71,10 +79,25 @@
 			}
 			
 			fixed4 frag(v2f i) : SV_TARGET{
+
+				fixed2 center = fixed2(_CenterX/_ScreenParams.x, _CenterY/_ScreenParams.y);
+                fixed time = _Time.y *  _WaveSpeed;
+                fixed amt = _Amount/1000;
+
+                fixed2 uv = center.xy-i.uv;
+                uv.x *= _ScreenParams.x/_ScreenParams.y;
+
+                fixed dist = sqrt(dot(uv,uv));
+                fixed ang = dist * _WaveAmount - time;
+                uv = i.uv + normalize(uv) * sin(ang) * amt;
+
+
+
+
 				fixed4 grab = tex2Dproj(
 					_GrabTexture, 
-					i.screenUV + float4( sin((_Time.x * _Manipulator) + i.screenUV.x * _Wavelength) * _Strength, 0, 0, 0)
-					// i.screenUV + float4( sin((_Time.x * _Manipulator)+i.screenUV.x*0.1)*0.1, sin((_Time.x * _Manipulator)+i.screenUV.x*0.1)*0.1, 0, 0)
+					i.screenUV + float4(uv.x, uv.y, 0, 0)
+					// i.screenUV + float4( sin((_Time.x * _Manipulator)+i.screenUV.x*4.0)*0.1, sin((_Time.x * _Manipulator)+i.screenUV.x*4.0)*0.1, 0, 0)
 				);
 				return grab;
 			}

@@ -10,6 +10,7 @@ public class worldmorph : MonoBehaviour {
 	private Vector3 myPostion;
 
 
+
 	// Use this for initialization
 	void Start () {
 		factor = 0.005f;
@@ -29,8 +30,13 @@ public class worldmorph : MonoBehaviour {
 			factor = -factor;			
 		}
 
+		float timeFactor = (float)Time.realtimeSinceStartup * (0.1f/600);
+
+
 		this.transform.localScale = new Vector3(this.transform.localScale.x + factor, this.transform.localScale.y - factor, this.transform.localScale.z);
-		soil.transform.localPosition = new Vector3(soil.transform.localPosition.x + factor*0.1f, 0.84f, -100);
+		soil.transform.localPosition = new Vector3(soil.transform.localPosition.x + factor*0.1f,soil.transform.localPosition.y + factor*timeFactor, -100);
+
+		// Debug.Log(Time.realtimeSinceStartup);
 
 	}
 }

@@ -25,10 +25,17 @@ public class OSCManager : MonoBehaviour {
 	public int listenerPort = 8000;
 
 
-	public int step = 5;
-	public int target = 0;
-	public int pitch = 0;
-	public int velocity = 0;
+	public int step = 0;
+	public int drumTrigger = 0;
+
+	public int[] target = new int[] {0, 0, 0, 0};
+	public int[] pitch = new int[] {0, 0, 0, 0};
+	public int[] velocity = new int[] {0, 0, 0, 0};
+
+	private Camera m_MainCamera;
+	// public int synthNo = 0;
+
+
 
 
 
@@ -47,6 +54,8 @@ public class OSCManager : MonoBehaviour {
 		oscHandler.init(udp);
 
 		oscHandler.SetAllMessageHandler(AllMessageHandler);
+
+		m_MainCamera = Camera.main;
 		
 	}
 	
@@ -58,10 +67,27 @@ public class OSCManager : MonoBehaviour {
 			Debug.Log("stimulated");
 		}
 
-		if(target != 0)
+		for(int i = 0; i < 4; i++)
 		{
-			GameObject.Find("Trigger Master").GetComponent<TriggerMaster>().stimulate(target, pitch, velocity);
-			target = 0;
+
+			if(target[i] != 0)
+			{
+				GameObject.Find("Trigger Master").GetComponent<TriggerMaster>().stimulate(target[i], pitch[i], velocity[i]);
+				target[i] = 0;
+
+			}
+		}
+
+		if(drumTrigger == 36)
+		{
+			m_MainCamera.GetComponent<RipplePostProcessor>().shakeScreen();
+			drumTrigger = 0;
+		}
+		else if (drumTrigger == 38 || drumTrigger == 42)
+		{
+			GameObject.Find("HalluCylinder").GetComponent<ShaderManipulator>().Distort();
+			drumTrigger = 0;
+
 
 		}
 
@@ -105,9 +131,13 @@ public class OSCManager : MonoBehaviour {
 
 		if(msgArray[0] == "/stimObj")
 		{
-			target = Convert.ToInt32(msgArray[1]);
-			pitch = Convert.ToInt32(msgArray[2]);
-			velocity = Convert.ToInt32(msgArray[3]);
+			int synthNo = Convert.ToInt32(msgArray[4]) - 1;
+
+			target[synthNo] = Convert.ToInt32(msgArray[1]);
+			pitch[synthNo] = Convert.ToInt32(msgArray[2]);
+			velocity[synthNo] = Convert.ToInt32(msgArray[3]);
+
+			
 
 			// GameObject.Find("Trigger Master").GetComponent<TriggerMaster>().stimulate(target, pitch, velocity);
 
@@ -119,6 +149,13 @@ public class OSCManager : MonoBehaviour {
 
 			// Debug.Log("Stimulate No. " + target + " with " + pitch + " " + velocity);
 
+
+		}
+
+		if(msgArray[0] == "/drums")
+		{
+			drumTrigger = Convert.ToInt32(msgArray[1]);
+			step = Convert.ToInt32(msgArray[2]);
 
 		}
 		

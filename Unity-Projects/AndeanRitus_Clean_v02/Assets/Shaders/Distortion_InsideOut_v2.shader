@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Distortion"
+﻿Shader "Unlit/Distortion_InsideOut_v2"
 {
 	Properties
 	{
@@ -12,6 +12,7 @@
 		// Queue is important! this object must be rendered after
 		// Opaque objects.
 		Tags { "RenderType"="Transparent" "Queue"="Transparent" }
+		Cull front 
 		LOD 100
 		GrabPass{
 			// "_BGTex"

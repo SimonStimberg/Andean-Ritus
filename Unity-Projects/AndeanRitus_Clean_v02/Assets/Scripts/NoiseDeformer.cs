@@ -13,10 +13,14 @@ public class NoiseDeformer : MonoBehaviour
 	private Vector3[] baseVertices;
 
 	public float NoiseScale = 0.5f;
-	public float speed = 0.8f;
+	public float speed = 0.5f;
 
 	public float idleIntensity = 0.3f;
 	public float stimIntensity = 3.0f;
+	public float viscosity = 0.05f;
+
+	public float size = 1.0f;
+	private bool unsized = true;
 
 
 	void Start()
@@ -29,9 +33,24 @@ public class NoiseDeformer : MonoBehaviour
 	
 	void Update()
 	{
-		stimIntensity = Mathf.Lerp(stimIntensity, idleIntensity, 0.05f);
+		stimIntensity = Mathf.Lerp(stimIntensity, idleIntensity, viscosity);
 		AnimateMesh(stimIntensity);
+		if(unsized && size != 1.0f)
+		{
+			Resize();
+		}
 	}
+
+	void Resize()
+	{
+		Vector3 actualSize = this.transform.localScale;
+		this.transform.localScale = new Vector3(actualSize.x * size, actualSize.y * size, actualSize.z * size);
+		unsized = false;
+
+
+	}
+
+
 
 
 	// void Stimulate(float intensity)

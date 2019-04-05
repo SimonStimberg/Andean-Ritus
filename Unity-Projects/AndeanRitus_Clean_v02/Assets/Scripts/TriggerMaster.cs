@@ -137,7 +137,7 @@ public class TriggerMaster : MonoBehaviour {
 
 		float newX = m_MainCamera.transform.position.x + varyDistance * Mathf.Sin(newAngle * Mathf.Deg2Rad);
 		float newZ = m_MainCamera.transform.position.z + varyDistance * Mathf.Cos(newAngle * Mathf.Deg2Rad);
-		float newY = Random.Range(2.5f, 8.0f);
+		float newY = Random.Range(2.5f, 12.0f);
 
 		// Debug.Log(newX + " / " + newZ);
 
@@ -156,12 +156,36 @@ public class TriggerMaster : MonoBehaviour {
 
 	}
 
-	public void stimulate(int target, int pitch, int vel)
+	public void stimulate(int target, int pit, int vel)
 	{
 		float noise = 7.0f;
-		GameObject.Find("MysticalSphere"+target).GetComponent<NoiseDeformer>().stimIntensity = noise;
-		Debug.Log("Stimulate No. " + target + " with " + pitch + " " + vel);
+		float pitch = (float)pit;
+		float velocity = (float)vel;
+
+		float speed = scaleMe(pitch, 26.0f, 74.0f, 0.5f, 1.5f);
+		float viscosity = scaleMe(pitch, 26.0f, 74.0f, 0.02f, 0.07f);
+		float size = scaleMe(pitch, 26.0f, 74.0f, 1.5f, 0.5f);
+		float intensity = scaleMe(velocity, 0.0f, 127.0f, 0.3f, 5.0f);
+
+
+		GameObject.Find("MysticalSphere"+target).GetComponent<NoiseDeformer>().stimIntensity = intensity;
+		GameObject.Find("MysticalSphere"+target).GetComponent<NoiseDeformer>().speed = speed;
+		GameObject.Find("MysticalSphere"+target).GetComponent<NoiseDeformer>().viscosity = viscosity;
+		GameObject.Find("MysticalSphere"+target).GetComponent<NoiseDeformer>().size = size;
+		Debug.Log("Stimulate No. " + target + " with speed " + speed + " / viscosity " + viscosity);
 	}
+
+
+
+	private float scaleMe(float OldValue, float OldMin, float OldMax, float NewMin, float NewMax){
+     
+        float OldRange = (OldMax - OldMin);
+        float NewRange = (NewMax - NewMin);
+        float NewValue = (((OldValue - OldMin) * NewRange) / OldRange) + NewMin;
+     
+        return(NewValue);
+    }
+
 
 
 }
