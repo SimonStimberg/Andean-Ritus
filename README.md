@@ -1,6 +1,25 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
+### 4. April 2019
+
+#### Unity
+spheres now spawn in different sizes and viscosity of material according to their pitch  
+found a very nice camera wobble shader - implemented it for bassdrum effect  
+messed around with the distortion shader didnt came to a satisfiying result   
+-> put it on a cylinder inside-out and triggered with snare and hihat  
+added more worldmorph - now the ground is lifting up  
+-> with the speed depending on the time passed  
+
+#### Max
+made extern instance of the Spatializer - so the update on any changes  
+cleaned up the patch a bit  
+drum trigger are now sent over OSC, too
+
+
+<hr>
+<br>
+
 
 ### 4. April 2019
 
