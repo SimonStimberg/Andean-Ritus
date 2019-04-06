@@ -23,6 +23,8 @@ public class TriggerMaster : MonoBehaviour {
     //References to the relevent axis angle variables
     float magnitude;
     Vector3 axis;
+
+	float interMov;
  
     public Vector3 angularVelocity { 
         get {
@@ -31,10 +33,11 @@ public class TriggerMaster : MonoBehaviour {
         }
     }
 
-	float[] magArray = new float[] {1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f};
+	// the bigger the array the bigger the movement buffer
+	float[] magArray = new float[128];
 	int arrayCounter = 0;
 
-	// float test;
+	// float interMov;
 
 	// Use this for initialization
 	void Start () 
@@ -68,7 +71,7 @@ public class TriggerMaster : MonoBehaviour {
         deltaRotation.ToAngleAxis(out magnitude, out axis);
         lastRotation = m_MainCamera.transform.rotation;
 
-		// Debug.Log(magnitude);
+		Debug.Log(magnitude);
 
 
 		magArray[arrayCounter] = magnitude;
@@ -78,17 +81,17 @@ public class TriggerMaster : MonoBehaviour {
 			arrayCounter = 0;
 		}
 		
-		float test = 0.0f;
+		interMov = 0.0f;
 		for (int i = 0; i < magArray.Length; i++)
 		{
-			test += magArray[i];
+			interMov += magArray[i];
 		}
-		test = test / magArray.Length;
+		interMov = interMov / magArray.Length;
 		
-		// Debug.Log(test);
+		// Debug.Log(interMov);
 
 		
-		if(triggerReady && test <= 0.5)
+		if(triggerReady && interMov <= 0.5 && objCounter <= 64)
 		{
 			triggerNew();
 			triggerReady = false;
@@ -106,13 +109,15 @@ public class TriggerMaster : MonoBehaviour {
 		// 	Debug.Log("stimulated");
 		// }
 
+		// Debug.Log(m_MainCamera.transform.rotation.x);
+
 
 		
 	}
 
 	void sendCameraPos()
 	{
-		string cameraPos = m_MainCamera.transform.position.x + " " + m_MainCamera.transform.position.z + " " + m_MainCamera.transform.position.y + " " + m_MainCamera.transform.rotation.w + " " + m_MainCamera.transform.rotation.x + " " + m_MainCamera.transform.rotation.y + " " + m_MainCamera.transform.rotation.y;
+		string cameraPos = m_MainCamera.transform.position.x + " " + m_MainCamera.transform.position.z + " " + m_MainCamera.transform.position.y + " " + m_MainCamera.transform.rotation.w + " " + m_MainCamera.transform.rotation.x + " " + m_MainCamera.transform.rotation.z + " " + m_MainCamera.transform.rotation.y + " " + magnitude;
 		GameObject.Find("OSC Receiver").GetComponent<OSCManager>().SendNewMessage("/mePos", cameraPos);
 
 
@@ -148,7 +153,7 @@ public class TriggerMaster : MonoBehaviour {
 
 		objCounter++;
 
-		Debug.Log("/createObj " + newMsg);
+		// Debug.Log("/createObj " + newMsg);
 
 
 

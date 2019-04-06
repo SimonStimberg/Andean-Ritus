@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 446.0, 234.0, 1019.0, 840.0 ],
+		"rect" : [ 682.0, 349.0, 1019.0, 840.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 711.0, 105.0, 55.0, 22.0 ],
+					"text" : "zl slice 4"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 18.0,
@@ -653,6 +665,13 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-68", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-102", 1 ],
 					"order" : 0,
 					"source" : [ "obj-10", 0 ]
@@ -707,15 +726,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-67", 0 ],
-					"source" : [ "obj-14", 0 ]
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-14", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-68", 0 ],
-					"source" : [ "obj-14", 1 ]
+					"destination" : [ "obj-67", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -979,28 +998,24 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "panner.maxpat",
-				"bootpath" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects",
+				"bootpath" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pfftLeft.maxpat",
-				"bootpath" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects",
+				"bootpath" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pfftRight.maxpat",
-				"bootpath" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects",
+				"bootpath" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "mxj.mxe64",
-				"type" : "mx64"
 			}
  ],
 		"autosave" : 0
