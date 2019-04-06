@@ -1,7 +1,18 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
-### 4. April 2019
+### 6. April 2019
+
+added synth parameter manipulation  
+mainly based on the rotation velocity and y.quaternion value (angle of rotation)  
+harmonics manipulation on sine wave pattern -> (speed could be controlled either via random/noise or movement data)  
+added a drone -> has to be configured
+
+<hr>
+<br>
+
+
+### 5. April 2019
 
 #### Unity
 spheres now spawn in different sizes and viscosity of material according to their pitch  
