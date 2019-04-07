@@ -1,6 +1,20 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
+### 7. April 2019
+
+configured shruti box drone  
+implemented "game"-logic  
+extensive use of exponential mapping and lerping  
+most parameters depend on amount of objects spawned.  
+synth modulation party dependant of viewers rotation + position  
+added automated hue shift from post processing stack  
+
+<hr>
+<br>
+
+
+
 ### 6. April 2019
 
 added synth parameter manipulation  
