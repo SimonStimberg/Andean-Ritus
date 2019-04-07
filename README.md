@@ -4,11 +4,20 @@
 ### 7. April 2019
 
 configured shruti box drone  
+added automated hue shift from post processing stack  
+added space echo at the end of sum - to increase psychedelization  
 implemented "game"-logic  
 extensive use of exponential mapping and lerping  
+synth modulation partly dependant of viewers rotation + position  
 most parameters depend on amount of objects spawned.  
-synth modulation party dependant of viewers rotation + position  
-added automated hue shift from post processing stack  
+- global tempo  
+- echo amount
+- shruti level
+- some synth parameters
+- bassdrum + snare visual distortion
+- opacity of hue shift
+
+
 
 <hr>
 <br>
