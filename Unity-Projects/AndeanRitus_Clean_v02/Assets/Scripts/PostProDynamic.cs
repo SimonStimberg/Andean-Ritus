@@ -2,27 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
-using DG.Tweening;
+// using DG.Tweening;
 
 public class PostProDynamic : MonoBehaviour {
 
 
-	public float useMe = 0.0f;
-	public int getStep = 0;
-	private PostProcessVolume volume;
+	public float weight = 0.0f;
 
-	private Component stepNow;
-	private int stepper = 0;
+	[Range(0, 1)]
+	public float weightTest = 1f;
+	
+	PostProcessVolume volume = null;
+	ColorGrading hueShifter = null;
+
+		
+
+	
+	private float shifter = 0f;
+	private float increment = 1f;
 	// private GameObject oscr;
 	// private OSCReceiver scripty;
 
 	// Use this for initialization
 	void Start () {
-        var vignette = ScriptableObject.CreateInstance<ChromaticAberration>();
-        vignette.enabled.Override(true);
-        vignette.intensity.Override(1f);
+        hueShifter = ScriptableObject.CreateInstance<ColorGrading>();
+        hueShifter.enabled.Override(true);
+		hueShifter.saturation.Override(10f);
 
-        volume = PostProcessManager.instance.QuickVolume(gameObject.layer, 100f, vignette);
+		// vignette = ScriptableObject.CreateInstance<Vignette>();
+		// vignette.enabled.Override(true);
+        // vignette.intensity.Override(1f);
+        // hueShifter.intensity.Override(1f);
+
+        // volume = PostProcessManager.instance.QuickVolume(gameObject.layer, 100f, vignette);
+		volume = PostProcessManager.instance.QuickVolume(gameObject.layer, 100f, hueShifter);
 		// oscr = GameObject.Find("OSC Receiver");
 		// scripty = oscr.GetComponent(OSCReceiver);
 
@@ -42,19 +55,33 @@ public class PostProDynamic : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		// volume.weight = useMe;
+		hueShifter.hueShift.Override(shifter);
+				
+
+		shifter += increment;
+
+		if (shifter >= 180f)
+		{
+			increment = -increment;
+		}
+		if (shifter <= -180f)
+		{
+			increment = -increment;
+		}
+
+		volume.weight = weight;
 
 		// stepNow = GameObject.Find("OSC Receiver").GetComponent("OSCReceiver");
 		// stepper = stepNow.step;
 
-		if(getStep == 1)
-		{
-			volume.weight = 1f;
-		}
-		else
-		{
-			volume.weight = 0f;
-		}
+		// if(getStep == 1)
+		// {
+		// 	volume.weight = 1f;
+		// }
+		// else
+		// {
+		// 	volume.weight = 0f;
+		// }
 		
 		
 	}

@@ -10,20 +10,30 @@ public class TriggerMaster : MonoBehaviour {
 	private bool triggerReady = false;
 	private bool manualTrigger = false;
 
-	private Camera m_MainCamera;
-
 	public float spawnDistance = 2.0f;
-	private int objCounter = 1;
+	private int objCounter = 0;
+
+	private float globalIntensity = 0f;
+	private float distortion = 0f;
+	private float colorIntensity = 0f;
+	private float shrutiVel = 0f;
+
+	[Range(0,100)]
+	public float testIn = 0f;
+	public float testPower = 2f;
+	public float testOut = 0f;
 
 
+	private Camera m_MainCamera;
 
 	//Holds the previous frames rotation
     Quaternion lastRotation;
  
     //References to the relevent axis angle variables
+	Vector3 axis;
     float magnitude;
-    Vector3 axis;
-
+    
+	// intermediate Movement value
 	float interMov;
  
     public Vector3 angularVelocity { 
@@ -37,7 +47,6 @@ public class TriggerMaster : MonoBehaviour {
 	float[] magArray = new float[128];
 	int arrayCounter = 0;
 
-	// float interMov;
 
 	// Use this for initialization
 	void Start () 
@@ -54,16 +63,45 @@ public class TriggerMaster : MonoBehaviour {
 	void Update () 
 	{
 		sendCameraPos();
+		calcAngularVel();
+		increaseIntensity();
 
+		
 		timeCount -= Time.deltaTime;
  
 		if (timeCount <= 0.0f)
+		{	
+			triggerReady = true;			
+		}
+		
+		if (triggerReady && interMov <= 0.5 && objCounter <= 64)
 		{
+			triggerNew();
 			
-			triggerReady = true;
-			
+			triggerReady = false;
+			timeCount = triggerTime;
+			// manualTrigger = false;
 		}
 
+		testOut = scaleMeExp(testIn, 0f, 100f, 0f, 100f, testPower);
+
+		
+
+
+		// Debug.Log(m_MainCamera.transform.rotation.x);
+		
+	}
+
+	void sendCameraPos()
+	{
+		string cameraPos = m_MainCamera.transform.position.x + " " + m_MainCamera.transform.position.z + " " + m_MainCamera.transform.position.y + " " + m_MainCamera.transform.rotation.w + " " + m_MainCamera.transform.rotation.x + " " + m_MainCamera.transform.rotation.z + " " + m_MainCamera.transform.rotation.y + " " + magnitude;
+		GameObject.Find("OSC Receiver").GetComponent<OSCManager>().SendNewMessage("/mePos", cameraPos);
+
+
+	}
+
+	void calcAngularVel()
+	{
 
 		//The fancy, relevent math
 		//code found at https://forum.unity.com/threads/manually-calculate-angular-velocity-of-gameobject.289462/
@@ -71,9 +109,9 @@ public class TriggerMaster : MonoBehaviour {
         deltaRotation.ToAngleAxis(out magnitude, out axis);
         lastRotation = m_MainCamera.transform.rotation;
 
-		Debug.Log(magnitude);
+		// Debug.Log(magnitude);
 
-
+		// calculate the average magnitude (amount of rotation movement) over time
 		magArray[arrayCounter] = magnitude;
 		arrayCounter++;
 		if(arrayCounter == magArray.Length)
@@ -90,35 +128,38 @@ public class TriggerMaster : MonoBehaviour {
 		
 		// Debug.Log(interMov);
 
-		
-		if(triggerReady && interMov <= 0.5 && objCounter <= 64)
-		{
-			triggerNew();
-			triggerReady = false;
-			timeCount = triggerTime;
-			// manualTrigger = false;
-
-		}
-
-
-		// Debug.Log(m_MainCamera.transform.eulerAngles.y);
-
-		// if (Input.GetKey(KeyCode.Q))
-    	// {
-		// 	stimulate(2, 50, 50);
-		// 	Debug.Log("stimulated");
-		// }
-
-		// Debug.Log(m_MainCamera.transform.rotation.x);
-
-
-		
 	}
 
-	void sendCameraPos()
+
+
+	void increaseIntensity()
 	{
-		string cameraPos = m_MainCamera.transform.position.x + " " + m_MainCamera.transform.position.z + " " + m_MainCamera.transform.position.y + " " + m_MainCamera.transform.rotation.w + " " + m_MainCamera.transform.rotation.x + " " + m_MainCamera.transform.rotation.z + " " + m_MainCamera.transform.rotation.y + " " + magnitude;
-		GameObject.Find("OSC Receiver").GetComponent<OSCManager>().SendNewMessage("/mePos", cameraPos);
+		float newIntenstiy = scaleMe((float)objCounter, 0f, 64f, 0f, 100f);
+		float newIntenstiyExp = scaleMeExp((float)objCounter, 0f, 64f, 0f, 100f, 2f);
+		float newColorInt = scaleMeExp((float)objCounter, 0f, 64f, 0f, 1f, 3f);
+		
+
+		globalIntensity = Mathf.Lerp(globalIntensity, newIntenstiy, 0.1f);
+		distortion = Mathf.Lerp(distortion, newIntenstiyExp, 0.01f);
+		colorIntensity = Mathf.Lerp(colorIntensity, newColorInt, 0.01f);
+
+
+
+		if (globalIntensity != newIntenstiy)
+		{
+			string newMsg = globalIntensity + "";
+			GameObject.Find("OSC Receiver").GetComponent<OSCManager>().SendNewMessage("/increase", newMsg);
+			// Debug.Log(globalIntensity);
+		}
+
+		GameObject.Find("HalluCylinder").GetComponent<ShaderManipulator>().Strength = distortion * 0.005f;
+		m_MainCamera.GetComponent<RipplePostProcessor>().MaxAmount = distortion * 0.15f;
+		GameObject.Find("PP-Volume").GetComponent<PostProDynamic>().weight = colorIntensity;
+
+		
+		// Debug.Log(newIntenstiy);
+
+			
 
 
 	}
@@ -128,6 +169,9 @@ public class TriggerMaster : MonoBehaviour {
 
 	void triggerNew()
 	{
+
+		objCounter++;
+
 		// m_MainCamera.transform.eulerAngles.y
 
 		// GenerateNewPlanet myScript = (GenerateNewPlanet)target;
@@ -142,7 +186,7 @@ public class TriggerMaster : MonoBehaviour {
 
 		float newX = m_MainCamera.transform.position.x + varyDistance * Mathf.Sin(newAngle * Mathf.Deg2Rad);
 		float newZ = m_MainCamera.transform.position.z + varyDistance * Mathf.Cos(newAngle * Mathf.Deg2Rad);
-		float newY = Random.Range(2.5f, 12.0f);
+		float newY = Random.Range(2.5f, 8.0f);
 
 		// Debug.Log(newX + " / " + newZ);
 
@@ -151,14 +195,11 @@ public class TriggerMaster : MonoBehaviour {
 		string newMsg = objCounter + " " + newX + " " + newZ + " " + newY;
 		GameObject.Find("OSC Receiver").GetComponent<OSCManager>().SendNewMessage("/createObj", newMsg);
 
-		objCounter++;
-
-		// Debug.Log("/createObj " + newMsg);
 
 
+		Debug.Log("/createObj " + newMsg);
 
-		// Debug.Log("You staring weirdo!");
-
+		
 	}
 
 	public void stimulate(int target, int pit, int vel)
@@ -169,7 +210,7 @@ public class TriggerMaster : MonoBehaviour {
 
 		float speed = scaleMe(pitch, 26.0f, 74.0f, 0.5f, 1.5f);
 		float viscosity = scaleMe(pitch, 26.0f, 74.0f, 0.02f, 0.07f);
-		float size = scaleMe(pitch, 26.0f, 74.0f, 1.5f, 0.5f);
+		float size = scaleMe(pitch, 26.0f, 74.0f, 2.0f, 0.5f);
 		float intensity = scaleMe(velocity, 0.0f, 127.0f, 0.3f, 5.0f);
 
 
@@ -190,6 +231,14 @@ public class TriggerMaster : MonoBehaviour {
      
         return(NewValue);
     }
+
+	private float scaleMeExp(float value, float start1, float stop1, float start2, float stop2, float power) {
+		float inT = scaleMe(value, start1, stop1, 0, 1);
+		float outT = Mathf.Pow(inT, power);
+		return scaleMe(outT, 0, 1, start2, stop2);
+	}
+
+
 
 
 

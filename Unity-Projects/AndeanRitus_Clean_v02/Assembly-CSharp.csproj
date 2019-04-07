@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\NoiseDeformer.cs" />
      <Compile Include="Assets\Scripts\OSCManager.cs" />
      <Compile Include="Assets\Scripts\PostProDynamic.cs" />
+     <Compile Include="Assets\Scripts\PostProDynamic_BackUp.cs" />
      <Compile Include="Assets\Scripts\RipplePostProcessor.cs" />
      <Compile Include="Assets\Scripts\ShaderManipulator.cs" />
      <Compile Include="Assets\Scripts\TriggerMaster.cs" />
