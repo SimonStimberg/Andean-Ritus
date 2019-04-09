@@ -74,7 +74,7 @@ public class TriggerMaster : MonoBehaviour {
 			triggerReady = true;			
 		}
 		
-		if (triggerReady && interMov <= 0.5 && objCounter <= 64)
+		if (triggerReady && interMov <= 0.5 && objCounter < 64)
 		{
 			triggerNew();
 			
