@@ -1,6 +1,16 @@
 # LogFile Orientationproject: Andean Ritus (AT) #
 <br>
 
+### 9. April 2019
+
+cleaned up 360-Video (removed watermarks) and graded the colors to fit landscape + created a non-visible video-loop  
+created a shore soundscape loop and placed it spatially in the environment  
+started working on the presentation  
+
+<hr>
+<br>
+
+
 ### 7. April 2019
 
 configured shruti box drone  
