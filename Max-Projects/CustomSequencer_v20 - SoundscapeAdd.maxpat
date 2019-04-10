@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2594.0, 262.0, 1852.0, 967.0 ],
+		"rect" : [ 34.0, 77.0, 1980.0, 1001.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -134,13 +134,13 @@
 					"patching_rect" : [ 2820.0, 1515.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.gain~[1]",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[1]",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "live.gain~[1]",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -185,7 +185,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -680,7 +680,7 @@
 									"patching_rect" : [ 741.0, 213.0, 392.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 39.0, 111.0, 349.0, 22.0 ],
-									"text" : "listenerRot -0.967161 -0.074427 0.018646 -0.242305"
+									"text" : "listenerRot -0.112985 0.021009 0.276033 0.954253"
 								}
 
 							}
@@ -1607,7 +1607,7 @@
 						"formantcorrection" : 0,
 						"mode" : "basic",
 						"originallength" : [ 108840.010884353745496, "ticks" ],
-						"originaltempo" : 120.0,
+						"originaltempo" : 119.999999999999986,
 						"pitchcorrection" : 0,
 						"quality" : "basic",
 						"timestretch" : [ 0 ]
@@ -1625,7 +1625,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2928.0, 447.0, 115.0, 22.0 ],
-					"text" : "7.447861"
+					"text" : "7."
 				}
 
 			}
@@ -1664,7 +1664,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2696.0, 200.0, 50.0, 35.0 ],
-					"text" : "4.350837"
+					"text" : "1.030948"
 				}
 
 			}
@@ -1715,7 +1715,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1902,7 +1902,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 533.0, 564.0, 89.0, 22.0 ],
-									"text" : "20.247861"
+									"text" : "109.4"
 								}
 
 							}
@@ -1914,7 +1914,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 62.0, 550.0, 85.25, 22.0 ],
-									"text" : "85.939311"
+									"text" : "82.251174"
 								}
 
 							}
@@ -2085,7 +2085,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 639.0, 521.0, 276.0, 22.0 ],
-									"text" : "send parent::additivo4::sldrs::harmonic_6"
+									"text" : "send parent::additivo4::sldrs::harmonic_4"
 								}
 
 							}
@@ -2157,7 +2157,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 187.25, 507.0, 276.0, 22.0 ],
-									"text" : "send parent::additivo4::sldrs::volume_7"
+									"text" : "send parent::additivo4::sldrs::volume_2"
 								}
 
 							}
@@ -2213,6 +2213,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-137",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 6,
 									"numoutlets" : 1,
@@ -2684,7 +2685,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2871,7 +2872,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 533.0, 564.0, 89.0, 22.0 ],
-									"text" : "20.247861"
+									"text" : "109.4"
 								}
 
 							}
@@ -2883,7 +2884,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 62.0, 550.0, 85.25, 22.0 ],
-									"text" : "22.867354"
+									"text" : "36.521684"
 								}
 
 							}
@@ -3054,7 +3055,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 639.0, 521.0, 276.0, 22.0 ],
-									"text" : "send parent::additivo3::sldrs::harmonic_6"
+									"text" : "send parent::additivo3::sldrs::harmonic_4"
 								}
 
 							}
@@ -3126,7 +3127,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 187.25, 507.0, 276.0, 22.0 ],
-									"text" : "send parent::additivo3::sldrs::volume_3"
+									"text" : "send parent::additivo3::sldrs::volume_8"
 								}
 
 							}
@@ -3182,6 +3183,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-137",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 6,
 									"numoutlets" : 1,
@@ -3653,7 +3655,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3840,7 +3842,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 533.0, 564.0, 89.0, 22.0 ],
-									"text" : "20.247861"
+									"text" : "109.4"
 								}
 
 							}
@@ -3852,7 +3854,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 62.0, 550.0, 85.25, 22.0 ],
-									"text" : "11.164305"
+									"text" : "82.251174"
 								}
 
 							}
@@ -4023,7 +4025,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 639.0, 521.0, 276.0, 22.0 ],
-									"text" : "send parent::additivo1::sldrs::harmonic_6"
+									"text" : "send parent::additivo1::sldrs::harmonic_4"
 								}
 
 							}
@@ -4151,6 +4153,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-137",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 6,
 									"numoutlets" : 1,
@@ -4670,7 +4673,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4857,7 +4860,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 533.0, 564.0, 89.0, 22.0 ],
-									"text" : "20.247861"
+									"text" : "109.4"
 								}
 
 							}
@@ -4869,7 +4872,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 62.0, 550.0, 85.25, 22.0 ],
-									"text" : "22.867354"
+									"text" : "36.521684"
 								}
 
 							}
@@ -5040,7 +5043,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 639.0, 521.0, 276.0, 22.0 ],
-									"text" : "send parent::additivo2::sldrs::harmonic_6"
+									"text" : "send parent::additivo2::sldrs::harmonic_4"
 								}
 
 							}
@@ -5112,7 +5115,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 187.25, 507.0, 276.0, 22.0 ],
-									"text" : "send parent::additivo2::sldrs::volume_3"
+									"text" : "send parent::additivo2::sldrs::volume_8"
 								}
 
 							}
@@ -5168,6 +5171,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-137",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 6,
 									"numoutlets" : 1,
@@ -5666,13 +5670,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-108",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2168.0, 179.0, 50.0, 35.0 ],
-					"text" : "101.5625"
+					"patching_rect" : [ 2168.0, 179.0, 50.0, 22.0 ],
+					"text" : "100."
 				}
 
 			}
@@ -5748,19 +5751,19 @@
 							"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Space Echo/Space Echo.amxd",
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"WarbleAmount" : 9.0,
-									"WarbleSpeed" : 21.0,
-									"bpm" : 100.0,
-									"clipping" : 0.181102362204724,
-									"feedback" : 9.448818897637839,
-									"highpass" : 70.866141732283467,
-									"inertia" : 1.196850393700789,
-									"live.menu" : 10.0,
-									"lowpass" : 9527.559055118110336,
+									"WarbleAmount" : 14.0,
+									"WarbleSpeed" : 43.0,
+									"bpm" : 30.0,
+									"clipping" : 0.63,
+									"feedback" : 47.0,
+									"highpass" : 220.0,
+									"inertia" : 2.687,
+									"live.menu" : 13.0,
+									"lowpass" : 3280.0,
 									"reverb_wetdry" : 0.0,
-									"revtime" : 2598.425196850399971,
-									"tempo" : 1.0,
-									"wet/dry" : 36.102294921875
+									"revtime" : 2800.0,
+									"tempo" : 0.0,
+									"wet/dry" : 34.999978637698575
 								}
 
 							}
@@ -5773,29 +5776,29 @@
 									"filetype" : "C74Snapshot",
 									"version" : 2,
 									"minorversion" : 0,
-									"name" : "Trippy Delay",
+									"name" : "Space Echo.amxd",
 									"origin" : "Space Echo.amxd",
 									"type" : "amxd",
 									"subtype" : "Undefined",
-									"embed" : 0,
+									"embed" : 1,
 									"snapshot" : 									{
 										"name" : "Space Echo.amxd",
 										"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Space Echo/Space Echo.amxd",
 										"valuedictionary" : 										{
 											"parameter_values" : 											{
-												"WarbleAmount" : 9.0,
-												"WarbleSpeed" : 21.0,
-												"bpm" : 100.0,
-												"clipping" : 0.181102362204724,
-												"feedback" : 9.448818897637839,
-												"highpass" : 70.866141732283467,
-												"inertia" : 1.196850393700789,
-												"live.menu" : 10.0,
-												"lowpass" : 9527.559055118110336,
+												"WarbleAmount" : 14.0,
+												"WarbleSpeed" : 43.0,
+												"bpm" : 30.0,
+												"clipping" : 0.63,
+												"feedback" : 47.0,
+												"highpass" : 220.0,
+												"inertia" : 2.687,
+												"live.menu" : 13.0,
+												"lowpass" : 3280.0,
 												"reverb_wetdry" : 0.0,
-												"revtime" : 2598.425196850399971,
-												"tempo" : 1.0,
-												"wet/dry" : 36.102294921875
+												"revtime" : 2800.0,
+												"tempo" : 0.0,
+												"wet/dry" : 34.999978637698575
 											}
 
 										}
@@ -5803,11 +5806,11 @@
 									}
 ,
 									"fileref" : 									{
-										"name" : "Trippy Delay",
+										"name" : "Space Echo.amxd",
 										"filename" : "Space Echo.amxd.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "4347bce5620a1651c3ac1240ce6f711c"
+										"snapshotfileid" : "e6e9fefef622b38bd4051b4d63f3d917"
 									}
 
 								}
@@ -5928,7 +5931,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 566.5, 327.0, 249.0, 22.0 ],
-					"text" : "target_seq 5, step 9 26 127 960"
+					"text" : "target_seq 5, step 1 26 127 960"
 				}
 
 			}
@@ -5956,7 +5959,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6376,30 +6379,30 @@
 							"origname" : "C74:/packages/Max for Live/patchers/Max Instrument/Laverne/Laverne.amxd",
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"Attack" : 3644.221332131959571,
-									"Decay" : 4213.125471365825433,
-									"Release" : 3734.865961008679278,
+									"Attack" : 2037.023123803434373,
+									"Decay" : 2505.673921956202776,
+									"Release" : 3455.634869397669718,
 									"Sustain" : 68.184164176866631,
-									"VelMod" : 100.0,
-									"cutoff" : 2843.228346456688996,
+									"VelMod" : 33.0,
+									"cutoff" : 1289.359985000000052,
 									"env_amount" : 100.0,
-									"filter_attack" : 2806.276254855023581,
-									"filter_decay" : 3360.067951647572045,
-									"filter_release" : 1870.704724409449682,
-									"filter_resonance" : 0.488629921259843,
+									"filter_attack" : 1447.800746368998261,
+									"filter_decay" : 2405.294764333694275,
+									"filter_release" : 493.259842519685037,
+									"filter_resonance" : 0.528,
 									"filter_sustain" : 66.0,
-									"filter_tracking" : -21.946456692913287,
-									"filter_velocity" : 100.0,
-									"level" : 0.271849775232639,
-									"osc1_level" : 83.464566929133881,
-									"osc1_octave" : 1.889763779527557,
+									"filter_tracking" : 6.4,
+									"filter_velocity" : 50.0,
+									"level" : -0.000005340576777,
+									"osc1_level" : 100.0,
+									"osc1_octave" : 2.047244094488189,
 									"osc1_tune" : 0.0,
 									"osc1_wave" : 0.0,
-									"osc2_level" : 80.314960629921302,
-									"osc2_octave" : -1.259842519685038,
+									"osc2_level" : 100.0,
+									"osc2_octave" : -0.787401574803148,
 									"osc2_tune" : 15.0,
 									"osc2_wave" : 1.0,
-									"voices" : 1.0
+									"voices" : 0.0
 								}
 
 							}
@@ -6407,7 +6410,7 @@
 						}
 ,
 						"snapshotlist" : 						{
-							"current_snapshot" : 2,
+							"current_snapshot" : 0,
 							"entries" : [ 								{
 									"filetype" : "C74Snapshot",
 									"version" : 2,
@@ -6436,7 +6439,7 @@
 												"filter_sustain" : 66.0,
 												"filter_tracking" : 6.4,
 												"filter_velocity" : 50.0,
-												"level" : 6.0,
+												"level" : -0.000005340576777,
 												"osc1_level" : 100.0,
 												"osc1_octave" : 2.047244094488189,
 												"osc1_tune" : 0.0,
@@ -6457,7 +6460,7 @@
 										"filename" : "Laverne.amxd.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "db63c61544cf3cc1f260f22c5adec009"
+										"snapshotfileid" : "249c063da0844b4553de09ad6fa40e4d"
 									}
 
 								}
@@ -6465,105 +6468,17 @@
 									"filetype" : "C74Snapshot",
 									"version" : 2,
 									"minorversion" : 0,
-									"name" : "Shruti Drone",
+									"name" : "Laverne.amxd",
 									"origin" : "Laverne.amxd",
 									"type" : "amxd",
 									"subtype" : "Undefined",
 									"embed" : 0,
-									"snapshot" : 									{
-										"name" : "Laverne.amxd",
-										"origname" : "C74:/packages/Max for Live/patchers/Max Instrument/Laverne/Laverne.amxd",
-										"valuedictionary" : 										{
-											"parameter_values" : 											{
-												"Attack" : 3644.221332131959571,
-												"Decay" : 4213.125471365825433,
-												"Release" : 3734.865961008679278,
-												"Sustain" : 68.184164176866631,
-												"VelMod" : 100.0,
-												"cutoff" : 2843.228346456688996,
-												"env_amount" : 100.0,
-												"filter_attack" : 2806.276254855023581,
-												"filter_decay" : 3360.067951647572045,
-												"filter_release" : 1870.704724409449682,
-												"filter_resonance" : 0.488629921259843,
-												"filter_sustain" : 66.0,
-												"filter_tracking" : -21.946456692913287,
-												"filter_velocity" : 100.0,
-												"level" : -22.250846364900291,
-												"osc1_level" : 83.464566929133881,
-												"osc1_octave" : 1.889763779527557,
-												"osc1_tune" : 0.0,
-												"osc1_wave" : 0.0,
-												"osc2_level" : 80.314960629921302,
-												"osc2_octave" : -1.259842519685038,
-												"osc2_tune" : 15.0,
-												"osc2_wave" : 1.0,
-												"voices" : 1.0
-											}
-
-										}
-
-									}
-,
 									"fileref" : 									{
-										"name" : "Shruti Drone",
-										"filename" : "Laverne.amxd[1].maxsnap",
+										"name" : "Laverne.amxd",
+										"filename" : "Laverne.amxd.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "860789c42207a4682254b74775b2061b"
-									}
-
-								}
-, 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "Shruti Drone v2",
-									"origin" : "Laverne.amxd",
-									"type" : "amxd",
-									"subtype" : "Undefined",
-									"embed" : 0,
-									"snapshot" : 									{
-										"name" : "Laverne.amxd",
-										"origname" : "C74:/packages/Max for Live/patchers/Max Instrument/Laverne/Laverne.amxd",
-										"valuedictionary" : 										{
-											"parameter_values" : 											{
-												"Attack" : 3644.221332131959571,
-												"Decay" : 4213.125471365825433,
-												"Release" : 3734.865961008679278,
-												"Sustain" : 68.184164176866631,
-												"VelMod" : 100.0,
-												"cutoff" : 2843.228346456688996,
-												"env_amount" : 100.0,
-												"filter_attack" : 2806.276254855023581,
-												"filter_decay" : 3360.067951647572045,
-												"filter_release" : 1870.704724409449682,
-												"filter_resonance" : 0.488629921259843,
-												"filter_sustain" : 66.0,
-												"filter_tracking" : -21.946456692913287,
-												"filter_velocity" : 100.0,
-												"level" : 0.271849775232639,
-												"osc1_level" : 83.464566929133881,
-												"osc1_octave" : 1.889763779527557,
-												"osc1_tune" : 0.0,
-												"osc1_wave" : 0.0,
-												"osc2_level" : 80.314960629921302,
-												"osc2_octave" : -1.259842519685038,
-												"osc2_tune" : 15.0,
-												"osc2_wave" : 1.0,
-												"voices" : 1.0
-											}
-
-										}
-
-									}
-,
-									"fileref" : 									{
-										"name" : "Shruti Drone v2",
-										"filename" : "Shruti Drone[1].maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "256972af00c16bbe03f62de7b31585d7"
+										"snapshotfileid" : "249c063da0844b4553de09ad6fa40e4d"
 									}
 
 								}
@@ -6590,7 +6505,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7528,7 +7443,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "bang" ],
-					"patching_rect" : [ 1819.166748046875, 1128.66650390625, 401.0, 138.096511840820312 ],
+					"patching_rect" : [ 1819.166748046875, 1128.66650390625, 401.0, 138.096511840820313 ],
 					"viewvisibility" : 1
 				}
 
@@ -7548,7 +7463,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "bang" ],
-					"patching_rect" : [ 1249.1666259765625, 1121.66650390625, 401.0, 145.096511840820312 ],
+					"patching_rect" : [ 1249.1666259765625, 1121.66650390625, 401.0, 145.096511840820313 ],
 					"viewvisibility" : 1
 				}
 
@@ -7568,7 +7483,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "bang" ],
-					"patching_rect" : [ 678.0, 1126.6666259765625, 403.409637451171875, 140.096389770507812 ],
+					"patching_rect" : [ 678.0, 1126.6666259765625, 403.409637451171875, 140.096389770507813 ],
 					"viewvisibility" : 1
 				}
 
@@ -7768,7 +7683,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 155.0, 232.0, 22.0 ],
-					"text" : "65 7.934241 -6.465575 4.203107"
+					"text" : "64 0.756468 5.862357 4.566557"
 				}
 
 			}
@@ -7918,7 +7833,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7959,7 +7874,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 379.0, 319.0, 162.0, 22.0 ],
-									"text" : "/drums 36 1"
+									"text" : "/drums 45 11"
 								}
 
 							}
@@ -7997,7 +7912,7 @@
 									"patching_rect" : [ 379.0, 250.5, 162.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 353.0, 246.5, 272.5, 22.0 ],
-									"text" : "/drums 36 1"
+									"text" : "/drums 45 11"
 								}
 
 							}
@@ -8058,7 +7973,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 126.0, 319.0, 212.0, 22.0 ],
-									"text" : "/stimObj 6 36 52 1"
+									"text" : "/stimObj 59 36 110 1"
 								}
 
 							}
@@ -8156,7 +8071,7 @@
 									"patching_rect" : [ 81.0, 250.5, 199.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 12.0, 73.5, 272.5, 22.0 ],
-									"text" : "/stimObj 6 36 52 1"
+									"text" : "/stimObj 59 36 110 1"
 								}
 
 							}
@@ -8379,7 +8294,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 193.0, 475.0, 217.0, 22.0 ],
-					"text" : "65 7.934241 -6.465575 4.203107"
+					"text" : "64 0.756468 5.862357 4.566557"
 				}
 
 			}
@@ -8450,7 +8365,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 327.0, 213.0, 22.0 ],
-					"text" : "target_seq 4, step 4 62 64 30. 64"
+					"text" : "target_seq 4, step 16 65 109 60. 64"
 				}
 
 			}
@@ -8490,7 +8405,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8613,7 +8528,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 306.0, 1058.0, 50.0, 22.0 ],
-									"text" : "0"
+									"text" : "3"
 								}
 
 							}
@@ -8625,7 +8540,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 81.0, 465.0, 50.0, 22.0 ],
-									"text" : "4"
+									"text" : "16"
 								}
 
 							}
@@ -8637,7 +8552,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 81.0, 427.0, 50.0, 22.0 ],
-									"text" : "6"
+									"text" : "9"
 								}
 
 							}
@@ -8649,7 +8564,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 81.0, 385.0, 50.0, 22.0 ],
-									"text" : "10"
+									"text" : "16"
 								}
 
 							}
@@ -8661,7 +8576,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 81.0, 348.0, 50.0, 22.0 ],
-									"text" : "14"
+									"text" : "6"
 								}
 
 							}
@@ -8673,7 +8588,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 81.0, 279.0, 50.0, 22.0 ],
-									"text" : "52"
+									"text" : "64"
 								}
 
 							}
@@ -8768,7 +8683,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 713.0, 813.0, 50.0, 22.0 ],
-									"text" : "65"
+									"text" : "64"
 								}
 
 							}
@@ -8936,7 +8851,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 210.0, 1076.0, 50.0, 22.0 ],
-									"text" : "62"
+									"text" : "65"
 								}
 
 							}
@@ -8986,7 +8901,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 202.0, 1159.0, 273.0, 22.0 ],
-									"text" : "target_seq 4, step 4 62 64 30. 64"
+									"text" : "target_seq 4, step 16 65 109 60. 64"
 								}
 
 							}
@@ -9867,7 +9782,7 @@
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 1,
 						"patchername" : "Additivo.amxd",
-						"patchername_fallback" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd"
+						"patchername_fallback" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd"
 					}
 ,
 					"snapshot" : 					{
@@ -9881,33 +9796,33 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"name" : "Additivo.amxd",
-							"origname" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
+							"origname" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
 									"attack" : 1.0,
 									"decay" : 0.0,
 									"env_curve" : -0.6,
-									"harm_num_2" : 46.0,
-									"harm_num_3" : 20.0,
-									"harm_num_4" : 7.0,
-									"harm_num_5" : 7.0,
-									"harm_num_6" : 20.0,
-									"harm_num_7" : 84.0,
-									"harm_num_8" : 71.0,
-									"harm_val_2" : 3.66,
-									"harm_val_3" : 1.58,
-									"harm_val_4" : 0.58,
-									"harm_val_5" : 0.58,
-									"harm_val_6" : 1.58,
-									"harm_val_7" : 6.58,
-									"harm_val_8" : 5.58,
-									"harmonic_2" : 45.847861135005957,
-									"harmonic_3" : 20.247861135005948,
-									"harmonic_4" : 7.447861135005951,
-									"harmonic_5" : 7.447861135005951,
-									"harmonic_6" : 20.247861135005948,
-									"harmonic_7" : 84.247861135005962,
-									"harmonic_8" : 71.447861135005951,
+									"harm_num_2" : 97.0,
+									"harm_num_3" : 109.0,
+									"harm_num_4" : 109.0,
+									"harm_num_5" : 20.0,
+									"harm_num_6" : 33.0,
+									"harm_num_7" : 58.0,
+									"harm_num_8" : 84.0,
+									"harm_val_2" : 7.66,
+									"harm_val_3" : 8.58,
+									"harm_val_4" : 8.58,
+									"harm_val_5" : 1.58,
+									"harm_val_6" : 2.58,
+									"harm_val_7" : 4.58,
+									"harm_val_8" : 6.58,
+									"harmonic_2" : 96.599991455082048,
+									"harmonic_3" : 109.399991455082045,
+									"harmonic_4" : 109.399991455082045,
+									"harmonic_5" : 19.799991455082036,
+									"harmonic_6" : 32.599991455082048,
+									"harmonic_7" : 58.199991455082042,
+									"harmonic_8" : 83.799991455082051,
 									"level" : -1.454068241469813,
 									"pan_1" : -64.0,
 									"pan_2" : -64.0,
@@ -9922,21 +9837,21 @@
 									"sustain" : 127.0,
 									"vol_harm" : 1.0,
 									"vol_num_1" : 127.0,
-									"vol_num_2" : 18.0,
-									"vol_num_3" : 13.0,
-									"vol_num_4" : 47.0,
-									"vol_num_5" : 92.0,
-									"vol_num_6" : 110.0,
-									"vol_num_7" : 86.0,
-									"vol_num_8" : 58.0,
+									"vol_num_2" : 82.0,
+									"vol_num_3" : 109.0,
+									"vol_num_4" : 106.0,
+									"vol_num_5" : 70.0,
+									"vol_num_6" : 26.0,
+									"vol_num_7" : 10.0,
+									"vol_num_8" : 37.0,
 									"volume_1" : 127.0,
-									"volume_2" : 18.26040351052356,
-									"volume_3" : 13.32885448584142,
-									"volume_4" : 47.443964266518179,
-									"volume_5" : 92.063878200397312,
-									"volume_6" : 109.858067197092851,
-									"volume_7" : 85.939310923423193,
-									"volume_8" : 58.112710636197193
+									"volume_2" : 82.251174059570417,
+									"volume_3" : 109.364579596907006,
+									"volume_4" : 105.58097103295718,
+									"volume_5" : 69.796555055271966,
+									"volume_6" : 25.816009788319796,
+									"volume_7" : 10.434946871695917,
+									"volume_8" : 36.521683745438651
 								}
 
 							}
@@ -9956,33 +9871,33 @@
 									"embed" : 1,
 									"snapshot" : 									{
 										"name" : "Additivo.amxd",
-										"origname" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
+										"origname" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
 										"valuedictionary" : 										{
 											"parameter_values" : 											{
 												"attack" : 1.0,
 												"decay" : 0.0,
 												"env_curve" : -0.6,
-												"harm_num_2" : 46.0,
-												"harm_num_3" : 20.0,
-												"harm_num_4" : 7.0,
-												"harm_num_5" : 7.0,
-												"harm_num_6" : 20.0,
-												"harm_num_7" : 84.0,
-												"harm_num_8" : 71.0,
-												"harm_val_2" : 3.66,
-												"harm_val_3" : 1.58,
-												"harm_val_4" : 0.58,
-												"harm_val_5" : 0.58,
-												"harm_val_6" : 1.58,
-												"harm_val_7" : 6.58,
-												"harm_val_8" : 5.58,
-												"harmonic_2" : 45.847861135005957,
-												"harmonic_3" : 20.247861135005948,
-												"harmonic_4" : 7.447861135005951,
-												"harmonic_5" : 7.447861135005951,
-												"harmonic_6" : 20.247861135005948,
-												"harmonic_7" : 84.247861135005962,
-												"harmonic_8" : 71.447861135005951,
+												"harm_num_2" : 97.0,
+												"harm_num_3" : 109.0,
+												"harm_num_4" : 109.0,
+												"harm_num_5" : 20.0,
+												"harm_num_6" : 33.0,
+												"harm_num_7" : 58.0,
+												"harm_num_8" : 84.0,
+												"harm_val_2" : 7.66,
+												"harm_val_3" : 8.58,
+												"harm_val_4" : 8.58,
+												"harm_val_5" : 1.58,
+												"harm_val_6" : 2.58,
+												"harm_val_7" : 4.58,
+												"harm_val_8" : 6.58,
+												"harmonic_2" : 96.599991455082048,
+												"harmonic_3" : 109.399991455082045,
+												"harmonic_4" : 109.399991455082045,
+												"harmonic_5" : 19.799991455082036,
+												"harmonic_6" : 32.599991455082048,
+												"harmonic_7" : 58.199991455082042,
+												"harmonic_8" : 83.799991455082051,
 												"level" : -1.454068241469813,
 												"pan_1" : -64.0,
 												"pan_2" : -64.0,
@@ -9997,21 +9912,21 @@
 												"sustain" : 127.0,
 												"vol_harm" : 1.0,
 												"vol_num_1" : 127.0,
-												"vol_num_2" : 18.0,
-												"vol_num_3" : 13.0,
-												"vol_num_4" : 47.0,
-												"vol_num_5" : 92.0,
-												"vol_num_6" : 110.0,
-												"vol_num_7" : 86.0,
-												"vol_num_8" : 58.0,
+												"vol_num_2" : 82.0,
+												"vol_num_3" : 109.0,
+												"vol_num_4" : 106.0,
+												"vol_num_5" : 70.0,
+												"vol_num_6" : 26.0,
+												"vol_num_7" : 10.0,
+												"vol_num_8" : 37.0,
 												"volume_1" : 127.0,
-												"volume_2" : 18.26040351052356,
-												"volume_3" : 13.32885448584142,
-												"volume_4" : 47.443964266518179,
-												"volume_5" : 92.063878200397312,
-												"volume_6" : 109.858067197092851,
-												"volume_7" : 85.939310923423193,
-												"volume_8" : 58.112710636197193
+												"volume_2" : 82.251174059570417,
+												"volume_3" : 109.364579596907006,
+												"volume_4" : 105.58097103295718,
+												"volume_5" : 69.796555055271966,
+												"volume_6" : 25.816009788319796,
+												"volume_7" : 10.434946871695917,
+												"volume_8" : 36.521683745438651
 											}
 
 										}
@@ -10023,7 +9938,25 @@
 										"filename" : "Additivo.amxd.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "a311ab7de4c4227b03f4bbda19e93ad6"
+										"snapshotfileid" : "fdf774d31789541fd7327471e9568536"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "Additivo.amxd",
+									"origin" : "Additivo.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "Additivo.amxd",
+										"filename" : "Additivo.amxd.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "fdf774d31789541fd7327471e9568536"
 									}
 
 								}
@@ -10141,7 +10074,7 @@
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 1,
 						"patchername" : "Additivo.amxd",
-						"patchername_fallback" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd"
+						"patchername_fallback" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd"
 					}
 ,
 					"snapshot" : 					{
@@ -10155,33 +10088,33 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"name" : "Additivo.amxd",
-							"origname" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
+							"origname" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
 									"attack" : 1.0,
 									"decay" : 51.0,
 									"env_curve" : -0.3,
-									"harm_num_2" : 46.0,
-									"harm_num_3" : 20.0,
-									"harm_num_4" : 7.0,
-									"harm_num_5" : 7.0,
-									"harm_num_6" : 20.0,
-									"harm_num_7" : 84.0,
-									"harm_num_8" : 71.0,
-									"harm_val_2" : 3.66,
-									"harm_val_3" : 1.58,
-									"harm_val_4" : 0.58,
-									"harm_val_5" : 0.58,
-									"harm_val_6" : 1.58,
-									"harm_val_7" : 6.58,
-									"harm_val_8" : 5.58,
-									"harmonic_2" : 45.847861135005957,
-									"harmonic_3" : 20.247861135005948,
-									"harmonic_4" : 7.447861135005951,
-									"harmonic_5" : 7.447861135005951,
-									"harmonic_6" : 20.247861135005948,
-									"harmonic_7" : 84.247861135005962,
-									"harmonic_8" : 71.447861135005951,
+									"harm_num_2" : 97.0,
+									"harm_num_3" : 109.0,
+									"harm_num_4" : 109.0,
+									"harm_num_5" : 20.0,
+									"harm_num_6" : 33.0,
+									"harm_num_7" : 58.0,
+									"harm_num_8" : 84.0,
+									"harm_val_2" : 7.66,
+									"harm_val_3" : 8.58,
+									"harm_val_4" : 8.58,
+									"harm_val_5" : 1.58,
+									"harm_val_6" : 2.58,
+									"harm_val_7" : 4.58,
+									"harm_val_8" : 6.58,
+									"harmonic_2" : 96.599991455082048,
+									"harmonic_3" : 109.399991455082045,
+									"harmonic_4" : 109.399991455082045,
+									"harmonic_5" : 19.799991455082036,
+									"harmonic_6" : 32.599991455082048,
+									"harmonic_7" : 58.199991455082042,
+									"harmonic_8" : 83.799991455082051,
 									"level" : 6.0,
 									"pan_1" : -64.0,
 									"pan_2" : -64.0,
@@ -10196,21 +10129,21 @@
 									"sustain" : 39.0,
 									"vol_harm" : 1.0,
 									"vol_num_1" : 93.0,
-									"vol_num_2" : 11.0,
-									"vol_num_3" : 23.0,
-									"vol_num_4" : 47.0,
-									"vol_num_5" : 92.0,
-									"vol_num_6" : 110.0,
-									"vol_num_7" : 86.0,
-									"vol_num_8" : 40.0,
+									"vol_num_2" : 82.0,
+									"vol_num_3" : 103.0,
+									"vol_num_4" : 106.0,
+									"vol_num_5" : 70.0,
+									"vol_num_6" : 26.0,
+									"vol_num_7" : 10.0,
+									"vol_num_8" : 37.0,
 									"volume_1" : 93.0,
-									"volume_2" : 11.164304613268346,
-									"volume_3" : 22.867353826768014,
-									"volume_4" : 47.443964266518179,
-									"volume_5" : 92.063878200397312,
-									"volume_6" : 109.858067197092851,
-									"volume_7" : 85.939310923423193,
-									"volume_8" : 40.318849835916964
+									"volume_2" : 82.251174059570417,
+									"volume_3" : 103.230805047170122,
+									"volume_4" : 105.58097103295718,
+									"volume_5" : 69.796555055271966,
+									"volume_6" : 25.816009788319796,
+									"volume_7" : 10.434946871695917,
+									"volume_8" : 36.521683745438651
 								}
 
 							}
@@ -10230,33 +10163,33 @@
 									"embed" : 1,
 									"snapshot" : 									{
 										"name" : "Additivo.amxd",
-										"origname" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
+										"origname" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
 										"valuedictionary" : 										{
 											"parameter_values" : 											{
 												"attack" : 1.0,
 												"decay" : 51.0,
 												"env_curve" : -0.3,
-												"harm_num_2" : 46.0,
-												"harm_num_3" : 20.0,
-												"harm_num_4" : 7.0,
-												"harm_num_5" : 7.0,
-												"harm_num_6" : 20.0,
-												"harm_num_7" : 84.0,
-												"harm_num_8" : 71.0,
-												"harm_val_2" : 3.66,
-												"harm_val_3" : 1.58,
-												"harm_val_4" : 0.58,
-												"harm_val_5" : 0.58,
-												"harm_val_6" : 1.58,
-												"harm_val_7" : 6.58,
-												"harm_val_8" : 5.58,
-												"harmonic_2" : 45.847861135005957,
-												"harmonic_3" : 20.247861135005948,
-												"harmonic_4" : 7.447861135005951,
-												"harmonic_5" : 7.447861135005951,
-												"harmonic_6" : 20.247861135005948,
-												"harmonic_7" : 84.247861135005962,
-												"harmonic_8" : 71.447861135005951,
+												"harm_num_2" : 97.0,
+												"harm_num_3" : 109.0,
+												"harm_num_4" : 109.0,
+												"harm_num_5" : 20.0,
+												"harm_num_6" : 33.0,
+												"harm_num_7" : 58.0,
+												"harm_num_8" : 84.0,
+												"harm_val_2" : 7.66,
+												"harm_val_3" : 8.58,
+												"harm_val_4" : 8.58,
+												"harm_val_5" : 1.58,
+												"harm_val_6" : 2.58,
+												"harm_val_7" : 4.58,
+												"harm_val_8" : 6.58,
+												"harmonic_2" : 96.599991455082048,
+												"harmonic_3" : 109.399991455082045,
+												"harmonic_4" : 109.399991455082045,
+												"harmonic_5" : 19.799991455082036,
+												"harmonic_6" : 32.599991455082048,
+												"harmonic_7" : 58.199991455082042,
+												"harmonic_8" : 83.799991455082051,
 												"level" : 6.0,
 												"pan_1" : -64.0,
 												"pan_2" : -64.0,
@@ -10271,21 +10204,21 @@
 												"sustain" : 39.0,
 												"vol_harm" : 1.0,
 												"vol_num_1" : 93.0,
-												"vol_num_2" : 11.0,
-												"vol_num_3" : 23.0,
-												"vol_num_4" : 47.0,
-												"vol_num_5" : 92.0,
-												"vol_num_6" : 110.0,
-												"vol_num_7" : 86.0,
-												"vol_num_8" : 40.0,
+												"vol_num_2" : 82.0,
+												"vol_num_3" : 103.0,
+												"vol_num_4" : 106.0,
+												"vol_num_5" : 70.0,
+												"vol_num_6" : 26.0,
+												"vol_num_7" : 10.0,
+												"vol_num_8" : 37.0,
 												"volume_1" : 93.0,
-												"volume_2" : 11.164304613268346,
-												"volume_3" : 22.867353826768014,
-												"volume_4" : 47.443964266518179,
-												"volume_5" : 92.063878200397312,
-												"volume_6" : 109.858067197092851,
-												"volume_7" : 85.939310923423193,
-												"volume_8" : 40.318849835916964
+												"volume_2" : 82.251174059570417,
+												"volume_3" : 103.230805047170122,
+												"volume_4" : 105.58097103295718,
+												"volume_5" : 69.796555055271966,
+												"volume_6" : 25.816009788319796,
+												"volume_7" : 10.434946871695917,
+												"volume_8" : 36.521683745438651
 											}
 
 										}
@@ -10297,7 +10230,25 @@
 										"filename" : "Additivo.amxd.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "a311ab7de4c4227b03f4bbda19e93ad6"
+										"snapshotfileid" : "fdf774d31789541fd7327471e9568536"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "Additivo.amxd",
+									"origin" : "Additivo.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "Additivo.amxd",
+										"filename" : "Additivo.amxd.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "fdf774d31789541fd7327471e9568536"
 									}
 
 								}
@@ -10415,7 +10366,7 @@
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 1,
 						"patchername" : "Additivo.amxd",
-						"patchername_fallback" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd"
+						"patchername_fallback" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd"
 					}
 ,
 					"snapshot" : 					{
@@ -10429,33 +10380,33 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"name" : "Additivo.amxd",
-							"origname" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
+							"origname" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
 									"attack" : 1.0,
 									"decay" : 80.0,
 									"env_curve" : -0.3,
-									"harm_num_2" : 46.0,
-									"harm_num_3" : 20.0,
-									"harm_num_4" : 7.0,
-									"harm_num_5" : 7.0,
-									"harm_num_6" : 20.0,
-									"harm_num_7" : 84.0,
-									"harm_num_8" : 71.0,
-									"harm_val_2" : 3.66,
-									"harm_val_3" : 1.58,
-									"harm_val_4" : 0.58,
-									"harm_val_5" : 0.58,
-									"harm_val_6" : 1.58,
-									"harm_val_7" : 6.58,
-									"harm_val_8" : 5.58,
-									"harmonic_2" : 45.847861135005957,
-									"harmonic_3" : 20.247861135005948,
-									"harmonic_4" : 7.447861135005951,
-									"harmonic_5" : 7.447861135005951,
-									"harmonic_6" : 20.247861135005948,
-									"harmonic_7" : 84.247861135005962,
-									"harmonic_8" : 71.447861135005951,
+									"harm_num_2" : 97.0,
+									"harm_num_3" : 109.0,
+									"harm_num_4" : 109.0,
+									"harm_num_5" : 20.0,
+									"harm_num_6" : 33.0,
+									"harm_num_7" : 58.0,
+									"harm_num_8" : 84.0,
+									"harm_val_2" : 7.66,
+									"harm_val_3" : 8.58,
+									"harm_val_4" : 8.58,
+									"harm_val_5" : 1.58,
+									"harm_val_6" : 2.58,
+									"harm_val_7" : 4.58,
+									"harm_val_8" : 6.58,
+									"harmonic_2" : 96.599991455082048,
+									"harmonic_3" : 109.399991455082045,
+									"harmonic_4" : 109.399991455082045,
+									"harmonic_5" : 19.799991455082036,
+									"harmonic_6" : 32.599991455082048,
+									"harmonic_7" : 58.199991455082042,
+									"harmonic_8" : 83.799991455082051,
 									"level" : 0.0,
 									"pan_1" : -64.0,
 									"pan_2" : -64.0,
@@ -10470,21 +10421,21 @@
 									"sustain" : 77.0,
 									"vol_harm" : 1.0,
 									"vol_num_1" : 127.0,
-									"vol_num_2" : 11.0,
-									"vol_num_3" : 23.0,
-									"vol_num_4" : 47.0,
-									"vol_num_5" : 92.0,
-									"vol_num_6" : 110.0,
-									"vol_num_7" : 86.0,
-									"vol_num_8" : 40.0,
+									"vol_num_2" : 82.0,
+									"vol_num_3" : 103.0,
+									"vol_num_4" : 106.0,
+									"vol_num_5" : 70.0,
+									"vol_num_6" : 26.0,
+									"vol_num_7" : 10.0,
+									"vol_num_8" : 37.0,
 									"volume_1" : 127.0,
-									"volume_2" : 11.164304613268346,
-									"volume_3" : 22.867353826768014,
-									"volume_4" : 47.443964266518179,
-									"volume_5" : 92.063878200397312,
-									"volume_6" : 109.858067197092851,
-									"volume_7" : 85.939310923423193,
-									"volume_8" : 40.318849835916964
+									"volume_2" : 82.251174059570417,
+									"volume_3" : 103.230805047170122,
+									"volume_4" : 105.58097103295718,
+									"volume_5" : 69.796555055271966,
+									"volume_6" : 25.816009788319796,
+									"volume_7" : 10.434946871695917,
+									"volume_8" : 36.521683745438651
 								}
 
 							}
@@ -10504,33 +10455,33 @@
 									"embed" : 1,
 									"snapshot" : 									{
 										"name" : "Additivo.amxd",
-										"origname" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
+										"origname" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
 										"valuedictionary" : 										{
 											"parameter_values" : 											{
 												"attack" : 1.0,
 												"decay" : 80.0,
 												"env_curve" : -0.3,
-												"harm_num_2" : 46.0,
-												"harm_num_3" : 20.0,
-												"harm_num_4" : 7.0,
-												"harm_num_5" : 7.0,
-												"harm_num_6" : 20.0,
-												"harm_num_7" : 84.0,
-												"harm_num_8" : 71.0,
-												"harm_val_2" : 3.66,
-												"harm_val_3" : 1.58,
-												"harm_val_4" : 0.58,
-												"harm_val_5" : 0.58,
-												"harm_val_6" : 1.58,
-												"harm_val_7" : 6.58,
-												"harm_val_8" : 5.58,
-												"harmonic_2" : 45.847861135005957,
-												"harmonic_3" : 20.247861135005948,
-												"harmonic_4" : 7.447861135005951,
-												"harmonic_5" : 7.447861135005951,
-												"harmonic_6" : 20.247861135005948,
-												"harmonic_7" : 84.247861135005962,
-												"harmonic_8" : 71.447861135005951,
+												"harm_num_2" : 97.0,
+												"harm_num_3" : 109.0,
+												"harm_num_4" : 109.0,
+												"harm_num_5" : 20.0,
+												"harm_num_6" : 33.0,
+												"harm_num_7" : 58.0,
+												"harm_num_8" : 84.0,
+												"harm_val_2" : 7.66,
+												"harm_val_3" : 8.58,
+												"harm_val_4" : 8.58,
+												"harm_val_5" : 1.58,
+												"harm_val_6" : 2.58,
+												"harm_val_7" : 4.58,
+												"harm_val_8" : 6.58,
+												"harmonic_2" : 96.599991455082048,
+												"harmonic_3" : 109.399991455082045,
+												"harmonic_4" : 109.399991455082045,
+												"harmonic_5" : 19.799991455082036,
+												"harmonic_6" : 32.599991455082048,
+												"harmonic_7" : 58.199991455082042,
+												"harmonic_8" : 83.799991455082051,
 												"level" : 0.0,
 												"pan_1" : -64.0,
 												"pan_2" : -64.0,
@@ -10545,21 +10496,21 @@
 												"sustain" : 77.0,
 												"vol_harm" : 1.0,
 												"vol_num_1" : 127.0,
-												"vol_num_2" : 11.0,
-												"vol_num_3" : 23.0,
-												"vol_num_4" : 47.0,
-												"vol_num_5" : 92.0,
-												"vol_num_6" : 110.0,
-												"vol_num_7" : 86.0,
-												"vol_num_8" : 40.0,
+												"vol_num_2" : 82.0,
+												"vol_num_3" : 103.0,
+												"vol_num_4" : 106.0,
+												"vol_num_5" : 70.0,
+												"vol_num_6" : 26.0,
+												"vol_num_7" : 10.0,
+												"vol_num_8" : 37.0,
 												"volume_1" : 127.0,
-												"volume_2" : 11.164304613268346,
-												"volume_3" : 22.867353826768014,
-												"volume_4" : 47.443964266518179,
-												"volume_5" : 92.063878200397312,
-												"volume_6" : 109.858067197092851,
-												"volume_7" : 85.939310923423193,
-												"volume_8" : 40.318849835916964
+												"volume_2" : 82.251174059570417,
+												"volume_3" : 103.230805047170122,
+												"volume_4" : 105.58097103295718,
+												"volume_5" : 69.796555055271966,
+												"volume_6" : 25.816009788319796,
+												"volume_7" : 10.434946871695917,
+												"volume_8" : 36.521683745438651
 											}
 
 										}
@@ -10571,7 +10522,25 @@
 										"filename" : "Additivo.amxd.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "a311ab7de4c4227b03f4bbda19e93ad6"
+										"snapshotfileid" : "fdf774d31789541fd7327471e9568536"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "Additivo.amxd",
+									"origin" : "Additivo.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "Additivo.amxd",
+										"filename" : "Additivo.amxd.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "fdf774d31789541fd7327471e9568536"
 									}
 
 								}
@@ -10689,7 +10658,7 @@
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 1,
 						"patchername" : "Additivo.amxd",
-						"patchername_fallback" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd"
+						"patchername_fallback" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd"
 					}
 ,
 					"snapshot" : 					{
@@ -10703,33 +10672,33 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"name" : "Additivo.amxd",
-							"origname" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
+							"origname" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
 									"attack" : 1.0,
 									"decay" : 99.0,
 									"env_curve" : -0.3,
-									"harm_num_2" : 46.0,
-									"harm_num_3" : 20.0,
-									"harm_num_4" : 7.0,
-									"harm_num_5" : 7.0,
-									"harm_num_6" : 20.0,
-									"harm_num_7" : 84.0,
-									"harm_num_8" : 71.0,
-									"harm_val_2" : 3.66,
-									"harm_val_3" : 1.58,
-									"harm_val_4" : 0.58,
-									"harm_val_5" : 0.58,
-									"harm_val_6" : 1.58,
-									"harm_val_7" : 6.58,
-									"harm_val_8" : 5.58,
-									"harmonic_2" : 45.847861135005957,
-									"harmonic_3" : 20.247861135005948,
-									"harmonic_4" : 7.447861135005951,
-									"harmonic_5" : 7.447861135005951,
-									"harmonic_6" : 20.247861135005948,
-									"harmonic_7" : 84.247861135005962,
-									"harmonic_8" : 71.447861135005951,
+									"harm_num_2" : 97.0,
+									"harm_num_3" : 109.0,
+									"harm_num_4" : 109.0,
+									"harm_num_5" : 20.0,
+									"harm_num_6" : 33.0,
+									"harm_num_7" : 58.0,
+									"harm_num_8" : 84.0,
+									"harm_val_2" : 7.66,
+									"harm_val_3" : 8.58,
+									"harm_val_4" : 8.58,
+									"harm_val_5" : 1.58,
+									"harm_val_6" : 2.58,
+									"harm_val_7" : 4.58,
+									"harm_val_8" : 6.58,
+									"harmonic_2" : 96.599991455082048,
+									"harmonic_3" : 109.399991455082045,
+									"harmonic_4" : 109.399991455082045,
+									"harmonic_5" : 19.799991455082036,
+									"harmonic_6" : 32.599991455082048,
+									"harmonic_7" : 58.199991455082042,
+									"harmonic_8" : 83.799991455082051,
 									"level" : 6.0,
 									"pan_1" : -64.0,
 									"pan_2" : -64.0,
@@ -10744,21 +10713,21 @@
 									"sustain" : 90.0,
 									"vol_harm" : 0.0,
 									"vol_num_1" : 127.0,
-									"vol_num_2" : 11.0,
-									"vol_num_3" : 13.0,
-									"vol_num_4" : 47.0,
-									"vol_num_5" : 92.0,
-									"vol_num_6" : 110.0,
-									"vol_num_7" : 86.0,
-									"vol_num_8" : 40.0,
+									"vol_num_2" : 82.0,
+									"vol_num_3" : 109.0,
+									"vol_num_4" : 106.0,
+									"vol_num_5" : 70.0,
+									"vol_num_6" : 26.0,
+									"vol_num_7" : 10.0,
+									"vol_num_8" : 37.0,
 									"volume_1" : 127.0,
-									"volume_2" : 11.164304613268346,
-									"volume_3" : 13.32885448584142,
-									"volume_4" : 47.443964266518179,
-									"volume_5" : 92.063878200397312,
-									"volume_6" : 109.858067197092851,
-									"volume_7" : 85.939310923423193,
-									"volume_8" : 40.318849835916964
+									"volume_2" : 82.251174059570417,
+									"volume_3" : 109.364579596907006,
+									"volume_4" : 105.58097103295718,
+									"volume_5" : 69.796555055271966,
+									"volume_6" : 25.816009788319796,
+									"volume_7" : 10.434946871695917,
+									"volume_8" : 36.521683745438651
 								}
 
 							}
@@ -10778,33 +10747,33 @@
 									"embed" : 1,
 									"snapshot" : 									{
 										"name" : "Additivo.amxd",
-										"origname" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
+										"origname" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects/Additivo.amxd",
 										"valuedictionary" : 										{
 											"parameter_values" : 											{
 												"attack" : 1.0,
 												"decay" : 99.0,
 												"env_curve" : -0.3,
-												"harm_num_2" : 46.0,
-												"harm_num_3" : 20.0,
-												"harm_num_4" : 7.0,
-												"harm_num_5" : 7.0,
-												"harm_num_6" : 20.0,
-												"harm_num_7" : 84.0,
-												"harm_num_8" : 71.0,
-												"harm_val_2" : 3.66,
-												"harm_val_3" : 1.58,
-												"harm_val_4" : 0.58,
-												"harm_val_5" : 0.58,
-												"harm_val_6" : 1.58,
-												"harm_val_7" : 6.58,
-												"harm_val_8" : 5.58,
-												"harmonic_2" : 45.847861135005957,
-												"harmonic_3" : 20.247861135005948,
-												"harmonic_4" : 7.447861135005951,
-												"harmonic_5" : 7.447861135005951,
-												"harmonic_6" : 20.247861135005948,
-												"harmonic_7" : 84.247861135005962,
-												"harmonic_8" : 71.447861135005951,
+												"harm_num_2" : 97.0,
+												"harm_num_3" : 109.0,
+												"harm_num_4" : 109.0,
+												"harm_num_5" : 20.0,
+												"harm_num_6" : 33.0,
+												"harm_num_7" : 58.0,
+												"harm_num_8" : 84.0,
+												"harm_val_2" : 7.66,
+												"harm_val_3" : 8.58,
+												"harm_val_4" : 8.58,
+												"harm_val_5" : 1.58,
+												"harm_val_6" : 2.58,
+												"harm_val_7" : 4.58,
+												"harm_val_8" : 6.58,
+												"harmonic_2" : 96.599991455082048,
+												"harmonic_3" : 109.399991455082045,
+												"harmonic_4" : 109.399991455082045,
+												"harmonic_5" : 19.799991455082036,
+												"harmonic_6" : 32.599991455082048,
+												"harmonic_7" : 58.199991455082042,
+												"harmonic_8" : 83.799991455082051,
 												"level" : 6.0,
 												"pan_1" : -64.0,
 												"pan_2" : -64.0,
@@ -10819,21 +10788,21 @@
 												"sustain" : 90.0,
 												"vol_harm" : 0.0,
 												"vol_num_1" : 127.0,
-												"vol_num_2" : 11.0,
-												"vol_num_3" : 13.0,
-												"vol_num_4" : 47.0,
-												"vol_num_5" : 92.0,
-												"vol_num_6" : 110.0,
-												"vol_num_7" : 86.0,
-												"vol_num_8" : 40.0,
+												"vol_num_2" : 82.0,
+												"vol_num_3" : 109.0,
+												"vol_num_4" : 106.0,
+												"vol_num_5" : 70.0,
+												"vol_num_6" : 26.0,
+												"vol_num_7" : 10.0,
+												"vol_num_8" : 37.0,
 												"volume_1" : 127.0,
-												"volume_2" : 11.164304613268346,
-												"volume_3" : 13.32885448584142,
-												"volume_4" : 47.443964266518179,
-												"volume_5" : 92.063878200397312,
-												"volume_6" : 109.858067197092851,
-												"volume_7" : 85.939310923423193,
-												"volume_8" : 40.318849835916964
+												"volume_2" : 82.251174059570417,
+												"volume_3" : 109.364579596907006,
+												"volume_4" : 105.58097103295718,
+												"volume_5" : 69.796555055271966,
+												"volume_6" : 25.816009788319796,
+												"volume_7" : 10.434946871695917,
+												"volume_8" : 36.521683745438651
 											}
 
 										}
@@ -10845,7 +10814,25 @@
 										"filename" : "Additivo.amxd.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "a311ab7de4c4227b03f4bbda19e93ad6"
+										"snapshotfileid" : "fdf774d31789541fd7327471e9568536"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "Additivo.amxd",
+									"origin" : "Additivo.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "Additivo.amxd",
+										"filename" : "Additivo.amxd.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "fdf774d31789541fd7327471e9568536"
 									}
 
 								}
@@ -10891,7 +10878,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 295.5, 327.0, 249.0, 22.0 ],
-					"text" : "target_seq 6, step 7 41 127 60"
+					"text" : "target_seq 6, step 8 42 127 60"
 				}
 
 			}
@@ -10907,7 +10894,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -10960,7 +10947,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 552.5, 382.0, 50.0, 22.0 ],
-									"text" : "41"
+									"text" : "42"
 								}
 
 							}
@@ -11161,7 +11148,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 209.0, 306.0, 50.0, 22.0 ],
-									"text" : "7"
+									"text" : "8"
 								}
 
 							}
@@ -11489,7 +11476,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -11775,19 +11762,19 @@
 							"origname" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums/Analogue Drums.amxd",
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"ad-level" : 0.316584138322895,
+									"ad-level" : 6.0,
 									"clhat-decay" : 1000.0,
 									"hat-level" : 4.0,
-									"hat-tone" : 29.0,
-									"kick-attack" : 20.0,
-									"kick-decay" : 1483.897637795274932,
+									"hat-tone" : 39.0,
+									"kick-attack" : 22.0,
+									"kick-decay" : 800.0,
 									"kick-level" : 100.0,
 									"kick-sweep" : 23.0,
 									"kick-tune" : 35.0,
 									"ophat-decay" : 1800.0,
 									"snare-decay" : 481.181102362204513,
 									"snare-hicut" : 700.0,
-									"snare-level" : 29.0,
+									"snare-level" : 44.0,
 									"snare-snap" : 12.0,
 									"snare-tune" : 183.858267716535465,
 									"tom-decay" : 600.0,
@@ -11802,7 +11789,7 @@
 						}
 ,
 						"snapshotlist" : 						{
-							"current_snapshot" : 5,
+							"current_snapshot" : 0,
 							"entries" : [ 								{
 									"filetype" : "C74Snapshot",
 									"version" : 2,
@@ -11923,84 +11910,17 @@
 									"filetype" : "C74Snapshot",
 									"version" : 2,
 									"minorversion" : 0,
-									"name" : "Analogue Drums.amxd[2]",
+									"name" : "Goood",
 									"origin" : "Analogue Drums.amxd",
 									"type" : "amxd",
 									"subtype" : "Undefined",
 									"embed" : 0,
 									"fileref" : 									{
-										"name" : "Analogue Drums.amxd[2]",
-										"filename" : "Analogue Drums.amxd[2].maxsnap",
+										"name" : "Goood",
+										"filename" : "Analogue Drums.amxd[1].maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "665101389d1309c77397fd865c140489"
-									}
-
-								}
-, 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "19-04-02 Calm Ritual Drums",
-									"origin" : "Analogue Drums.amxd",
-									"type" : "amxd",
-									"subtype" : "Undefined",
-									"embed" : 0,
-									"fileref" : 									{
-										"name" : "19-04-02 Calm Ritual Drums",
-										"filename" : "Analogue Drums.amxd[3].maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "5679729ae5439480556c11ea2f5003d0"
-									}
-
-								}
-, 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "Goood or Better",
-									"origin" : "Analogue Drums.amxd",
-									"type" : "amxd",
-									"subtype" : "Undefined",
-									"embed" : 0,
-									"snapshot" : 									{
-										"name" : "Analogue Drums.amxd",
-										"origname" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums/Analogue Drums.amxd",
-										"valuedictionary" : 										{
-											"parameter_values" : 											{
-												"ad-level" : 0.316584138322895,
-												"clhat-decay" : 1000.0,
-												"hat-level" : 4.0,
-												"hat-tone" : 29.0,
-												"kick-attack" : 20.0,
-												"kick-decay" : 1483.897637795274932,
-												"kick-level" : 100.0,
-												"kick-sweep" : 23.0,
-												"kick-tune" : 35.0,
-												"ophat-decay" : 1800.0,
-												"snare-decay" : 481.181102362204513,
-												"snare-hicut" : 700.0,
-												"snare-level" : 29.0,
-												"snare-snap" : 12.0,
-												"snare-tune" : 183.858267716535465,
-												"tom-decay" : 600.0,
-												"tom-hi" : 450.0,
-												"tom-level" : 18.330708661417372,
-												"tom-low" : 100.0,
-												"tom-mid" : 200.0
-											}
-
-										}
-
-									}
-,
-									"fileref" : 									{
-										"name" : "Goood or Better",
-										"filename" : "Goood[1].maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "24d623f43a55758f2c1dbd4d70c7f22e"
+										"snapshotfileid" : "0f6f1e7b5bb9a60a6e6062234498bf90"
 									}
 
 								}
@@ -12176,7 +12096,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -12654,10 +12574,10 @@
 					"patching_rect" : [ 609.0, 398.5, 524.0, 195.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.step",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "live.step",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "live.step",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -12858,14 +12778,14 @@
 					"patching_rect" : [ 1129.5, 1772.0, 269.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "Level",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "Level[2]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "Level",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -14636,16 +14556,16 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-8" : [ "live.step", "live.step", 0 ],
-			"obj-150" : [ "amxd~[6]", "amxd~[3]", 0 ],
-			"obj-136" : [ "amxd~[4]", "amxd~[4]", 0 ],
 			"obj-92" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
-			"obj-98" : [ "amxd~[1]", "amxd~[1]", 0 ],
+			"obj-8" : [ "live.step", "live.step", 0 ],
 			"obj-162" : [ "amxd~[7]", "amxd~[3]", 0 ],
 			"obj-5" : [ "amxd~", "amxd~", 0 ],
-			"obj-57" : [ "Level[2]", "Level", 0 ],
-			"obj-85" : [ "amxd~[3]", "amxd~[3]", 0 ],
 			"obj-134" : [ "amxd~[5]", "amxd~[3]", 0 ],
+			"obj-136" : [ "amxd~[4]", "amxd~[4]", 0 ],
+			"obj-98" : [ "amxd~[1]", "amxd~[1]", 0 ],
+			"obj-85" : [ "amxd~[3]", "amxd~[3]", 0 ],
+			"obj-57" : [ "Level[2]", "Level", 0 ],
+			"obj-150" : [ "amxd~[6]", "amxd~[3]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -14655,69 +14575,45 @@
 		"dependency_cache" : [ 			{
 				"name" : "Analogue Drums.amxd.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Users/stimberg/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Analogue Drums.amxd[1].maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Users/stimberg/Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Analogue Drums.amxd[2].maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Users/stimberg/Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Analogue Drums.amxd[3].maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Users/stimberg/Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Goood[1].maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Users/stimberg/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Additivo.amxd.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Users/stimberg/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "BigSpatializer.maxpat",
-				"bootpath" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects",
+				"bootpath" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "panner.maxpat",
-				"bootpath" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects",
+				"bootpath" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pfftLeft.maxpat",
-				"bootpath" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects",
+				"bootpath" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pfftRight.maxpat",
-				"bootpath" : "/Volumes/Projects/Andean Ritus/GitRepo/Andean-Ritus/Max-Projects",
+				"bootpath" : "E:/Student Files/Simon/GitRepo/Andean-Ritus/Max-Projects",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -14725,34 +14621,22 @@
 , 			{
 				"name" : "Laverne.amxd.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Users/stimberg/Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Laverne.amxd[1].maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Users/stimberg/Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Shruti Drone[1].maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Users/stimberg/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Space Echo.amxd.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Users/stimberg/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "OpenSoundControl.mxo",
-				"type" : "iLaX"
+				"name" : "OpenSoundControl.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "mxj.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0

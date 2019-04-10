@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TriggerMaster : MonoBehaviour {
 
 
-	public float triggerTime = 15.0f;
+	public float triggerTimeMin = 4.0f;
+	public float triggerTimeMax = 8.0f;
 	private float timeCount;
 	private bool triggerReady = false;
-	private bool manualTrigger = false;
+	private bool start = false;
+	private bool triggerCollapse = false;
 
 	public float spawnDistance = 2.0f;
 	private int objCounter = 0;
@@ -18,13 +21,16 @@ public class TriggerMaster : MonoBehaviour {
 	private float colorIntensity = 0f;
 	private float shrutiVel = 0f;
 
-	[Range(0,100)]
-	public float testIn = 0f;
-	public float testPower = 2f;
-	public float testOut = 0f;
+	// [Range(0,100)]
+	// public float testIn = 0f;
+	// public float testPower = 2f;
+	// public float testOut = 0f;
 
 
 	private Camera m_MainCamera;
+	private GameObject m_PPVolume;
+	private GameObject m_OSCManager;
+	private GameObject m_HalluCylinder;
 
 	//Holds the previous frames rotation
     Quaternion lastRotation;
@@ -35,7 +41,14 @@ public class TriggerMaster : MonoBehaviour {
     
 	// intermediate Movement value
 	float interMov;
- 
+
+	float medianMov;
+
+
+
+
+
+
     public Vector3 angularVelocity { 
         get {
             //DIVDED by Time.deltaTime to give you the degrees of rotation per axis per second
@@ -44,17 +57,26 @@ public class TriggerMaster : MonoBehaviour {
     }
 
 	// the bigger the array the bigger the movement buffer
-	float[] magArray = new float[128];
+	float[] magArray = new float[64];
 	int arrayCounter = 0;
+
+
+	public Text debugUI;
+	string debugTxt;
 
 
 	// Use this for initialization
 	void Start () 
 	{
-		timeCount = triggerTime;
+		timeCount = triggerTimeMax;
 		m_MainCamera = Camera.main;
+		m_PPVolume = GameObject.Find("PP-Volume");
+		m_OSCManager = GameObject.Find("OSC Receiver");
+		m_HalluCylinder = GameObject.Find("HalluCylinder");
 
 		lastRotation = m_MainCamera.transform.rotation;
+
+		// debugUI.text = "null";
 
 		
 	}
@@ -64,38 +86,68 @@ public class TriggerMaster : MonoBehaviour {
 	{
 		sendCameraPos();
 		calcAngularVel();
-		increaseIntensity();
-
+		if(!triggerCollapse)
+		{
+			increaseIntensity();
+		}
+		else
+		{
+			collapse();
+		}
 		
-		timeCount -= Time.deltaTime;
+
+		if (start)
+		{
+			timeCount -= Time.deltaTime;
+		}
  
-		if (timeCount <= 0.0f)
+		if (timeCount <= triggerTimeMax-triggerTimeMin)
 		{	
 			triggerReady = true;			
 		}
 		
-		if (triggerReady && interMov <= 0.5 && objCounter < 64)
+		if ((triggerReady && medianMov < 10f) || timeCount <= 0f)
 		{
-			triggerNew();
+			if (objCounter < 64)
+			{
+				triggerNew();
+				triggerReady = false;
+				timeCount = triggerTimeMax;
+			}
+			if (objCounter == 64)
+			{
+				triggerCollapse = true;
+				m_OSCManager.GetComponent<OSCManager>().SendNewMessage("/control", "1 1");
+			}
 			
-			triggerReady = false;
-			timeCount = triggerTime;
+			
+
 			// manualTrigger = false;
 		}
 
-		testOut = scaleMeExp(testIn, 0f, 100f, 0f, 100f, testPower);
+		// testOut = scaleMeExp(testIn, 0f, 100f, 0f, 100f, testPower);
+
+		if (Input.GetKeyDown(KeyCode.Return))
+        {
+			start = true;
+			m_OSCManager.GetComponent<OSCManager>().SendNewMessage("/control", "1 1");
+
+		}
 
 		
 
 
 		// Debug.Log(m_MainCamera.transform.rotation.x);
+
+		debugUI.text = "Mmov: " + medianMov + "\nObj: " + debugTxt;
+		// "AVel: " + angularVelocity.magnitude + 
 		
 	}
 
 	void sendCameraPos()
 	{
-		string cameraPos = m_MainCamera.transform.position.x + " " + m_MainCamera.transform.position.z + " " + m_MainCamera.transform.position.y + " " + m_MainCamera.transform.rotation.w + " " + m_MainCamera.transform.rotation.x + " " + m_MainCamera.transform.rotation.z + " " + m_MainCamera.transform.rotation.y + " " + magnitude;
-		GameObject.Find("OSC Receiver").GetComponent<OSCManager>().SendNewMessage("/mePos", cameraPos);
+		string cameraPos = m_MainCamera.transform.position.x + " " + m_MainCamera.transform.position.z + " " + m_MainCamera.transform.position.y + " " + m_MainCamera.transform.rotation.w + " " + m_MainCamera.transform.rotation.x + " " + m_MainCamera.transform.rotation.z + " " + m_MainCamera.transform.rotation.y + " " + angularVelocity.magnitude;
+		m_OSCManager.GetComponent<OSCManager>().SendNewMessage("/mePos", cameraPos);
 
 
 	}
@@ -112,7 +164,7 @@ public class TriggerMaster : MonoBehaviour {
 		// Debug.Log(magnitude);
 
 		// calculate the average magnitude (amount of rotation movement) over time
-		magArray[arrayCounter] = magnitude;
+		magArray[arrayCounter] = angularVelocity.magnitude;
 		arrayCounter++;
 		if(arrayCounter == magArray.Length)
 		{
@@ -125,6 +177,20 @@ public class TriggerMaster : MonoBehaviour {
 			interMov += magArray[i];
 		}
 		interMov = interMov / magArray.Length;
+
+
+		float[] sortedPNumbers = (float[])magArray.Clone();
+        System.Array.Sort(sortedPNumbers);
+		if(sortedPNumbers.Length % 2 != 0)
+		{
+			int i = (sortedPNumbers.Length + 1 ) /2;
+			medianMov = sortedPNumbers[i];
+		}
+		else
+		{
+			int i = sortedPNumbers.Length / 2;
+			medianMov = (sortedPNumbers[i] + sortedPNumbers[i+1]) / 2;
+		}
 		
 		// Debug.Log(interMov);
 
@@ -148,18 +214,51 @@ public class TriggerMaster : MonoBehaviour {
 		if (globalIntensity != newIntenstiy)
 		{
 			string newMsg = globalIntensity + "";
-			GameObject.Find("OSC Receiver").GetComponent<OSCManager>().SendNewMessage("/increase", newMsg);
+			m_OSCManager.GetComponent<OSCManager>().SendNewMessage("/increase", newMsg);
 			// Debug.Log(globalIntensity);
 		}
 
-		GameObject.Find("HalluCylinder").GetComponent<ShaderManipulator>().Strength = distortion * 0.005f;
-		m_MainCamera.GetComponent<RipplePostProcessor>().MaxAmount = distortion * 0.15f;
-		GameObject.Find("PP-Volume").GetComponent<PostProDynamic>().weight = colorIntensity;
+		m_HalluCylinder.GetComponent<ShaderManipulator>().Strength = distortion * 0.007f;
+		m_MainCamera.GetComponent<RipplePostProcessor>().MaxAmount = distortion * 0.14f;
+		m_MainCamera.GetComponent<RipplePostProcessor>().Friction = 0.9f - distortion * 0.0005f;
+		m_PPVolume.GetComponent<PostProDynamic>().weight = colorIntensity;
+		this.GetComponent<worldmorph>().factor = 1f + distortion * 0.06f;
+		this.GetComponent<worldmorph>().shift = distortion * 0.25f;
 
 		
 		// Debug.Log(newIntenstiy);
 
-			
+	}
+
+	void collapse()
+	{
+		this.GetComponent<worldmorph>().factor = Mathf.Lerp(this.GetComponent<worldmorph>().factor, 1f, 0.1f);
+		this.GetComponent<worldmorph>().shift = Mathf.Lerp(this.GetComponent<worldmorph>().shift, 0f, 0.1f);
+		m_PPVolume.GetComponent<PostProDynamic>().weight = Mathf.Lerp(m_PPVolume.GetComponent<PostProDynamic>().weight, 0f, 0.1f);
+
+		m_HalluCylinder.GetComponent<ShaderManipulator>().Strength = 0f;
+		m_MainCamera.GetComponent<RipplePostProcessor>().MaxAmount = 0f;
+		m_MainCamera.GetComponent<RipplePostProcessor>().Friction = 0.9f;
+
+
+		for(int i = 1; i <= 64; i++)
+		{
+			if(GameObject.Find("MysticalSphere"+i) != null)
+			{
+				Vector3 current = GameObject.Find("MysticalSphere"+i).transform.localScale;
+				current.x = Mathf.Lerp(current.x, 0f, 0.1f);
+				GameObject.Find("MysticalSphere"+i).transform.localScale = new Vector3(current.x, current.x, current.x);
+				if(current.x == 0f)
+				{
+					Destroy(GameObject.Find("MysticalSphere"+i));
+				}
+			}
+		}
+		
+
+
+
+
 
 
 	}
@@ -186,18 +285,19 @@ public class TriggerMaster : MonoBehaviour {
 
 		float newX = m_MainCamera.transform.position.x + varyDistance * Mathf.Sin(newAngle * Mathf.Deg2Rad);
 		float newZ = m_MainCamera.transform.position.z + varyDistance * Mathf.Cos(newAngle * Mathf.Deg2Rad);
-		float newY = Random.Range(2.5f, 8.0f);
+		float newY = Random.Range(2.5f, 12.0f);
 
 		// Debug.Log(newX + " / " + newZ);
 
 		this.GetComponent<GenerateNewPlanet>().CreatePlanet(objCounter, newX, newY, newZ);
 
 		string newMsg = objCounter + " " + newX + " " + newZ + " " + newY;
-		GameObject.Find("OSC Receiver").GetComponent<OSCManager>().SendNewMessage("/createObj", newMsg);
+		m_OSCManager.GetComponent<OSCManager>().SendNewMessage("/createObj", newMsg);
 
 
 
 		Debug.Log("/createObj " + newMsg);
+		debugTxt = newMsg;
 
 		
 	}

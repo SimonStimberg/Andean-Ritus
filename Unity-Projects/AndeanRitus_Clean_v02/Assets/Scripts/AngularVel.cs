@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AngularVel : MonoBehaviour {
 
@@ -28,6 +29,10 @@ public class AngularVel : MonoBehaviour {
         }
     }
 
+
+		public Text debugUI;
+	string debugTxt;
+
 	// Use this for initialization
 	void Start () {
 		m_MainCamera = Camera.main;
@@ -39,14 +44,17 @@ public class AngularVel : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		// debugUI.text = "S1: " + angularVelocity.magnitude + "\nS1m: " + magnitude + "\nS3: " + angularVelo3.magnitude;
+
+		
+	}
+
+	void FixedUpdate()
+	{
 		angFreq1();
 		angFreq2();
 		angFreq3();
 		
-	}
-
-	void fixedUpdate()
-	{
 
 
 
