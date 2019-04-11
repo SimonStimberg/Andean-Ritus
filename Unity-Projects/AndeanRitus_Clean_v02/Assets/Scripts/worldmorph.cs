@@ -45,7 +45,7 @@ public class worldmorph : MonoBehaviour {
 
 
 		world.transform.localScale = new Vector3(initScale.x * factor, initScale.y * (3/(2+factor)), initScale.z);
-		soil.transform.localPosition = new Vector3(initPostion.x + shift*0.1f, initPostion.y + shift*0.01f, initPostion.z);
+		soil.transform.localPosition = new Vector3(initPostion.x + shift*0.2f, initPostion.y + shift*0.03f, initPostion.z);
 
 		// Debug.Log(Time.realtimeSinceStartup);
 

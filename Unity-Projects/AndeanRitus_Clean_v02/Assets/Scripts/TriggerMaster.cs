@@ -8,10 +8,12 @@ public class TriggerMaster : MonoBehaviour {
 
 	public float triggerTimeMin = 4.0f;
 	public float triggerTimeMax = 8.0f;
-	private float timeCount;
+	private float initTimeMin, initTimeMax;
+	public float timeCount;
 	private bool triggerReady = false;
 	private bool start = false;
 	private bool triggerCollapse = false;
+	private bool peak = false;
 
 	public float spawnDistance = 2.0f;
 	private int objCounter = 0;
@@ -19,7 +21,7 @@ public class TriggerMaster : MonoBehaviour {
 	private float globalIntensity = 0f;
 	private float distortion = 0f;
 	private float colorIntensity = 0f;
-	private float shrutiVel = 0f;
+	
 
 	// [Range(0,100)]
 	// public float testIn = 0f;
@@ -44,6 +46,10 @@ public class TriggerMaster : MonoBehaviour {
 
 	float medianMov;
 
+	float scapeVolume = 0f;
+	float targetVolume = 0f;
+	bool fader = false;
+
 
 
 
@@ -60,7 +66,7 @@ public class TriggerMaster : MonoBehaviour {
 	float[] magArray = new float[64];
 	int arrayCounter = 0;
 
-
+	public bool debug = false;
 	public Text debugUI;
 	string debugTxt;
 
@@ -78,21 +84,34 @@ public class TriggerMaster : MonoBehaviour {
 
 		// debugUI.text = "null";
 
+		initTimeMin = triggerTimeMin;
+		initTimeMax = triggerTimeMax;
+
 		
 	}
 	
+
+
 	// Update is called once per frame
 	void Update () 
 	{
 		sendCameraPos();
 		calcAngularVel();
-		if(!triggerCollapse)
+
+		if(triggerCollapse)
+		{
+			collapse();
+		}
+		else if(!peak)
 		{
 			increaseIntensity();
 		}
-		else
+		
+
+
+		if (fader) 
 		{
-			collapse();
+			fadeSoundscape();
 		}
 		
 
@@ -106,24 +125,36 @@ public class TriggerMaster : MonoBehaviour {
 			triggerReady = true;			
 		}
 		
+
 		if ((triggerReady && medianMov < 10f) || timeCount <= 0f)
 		{
+			if (peak)
+			{
+				Debug.Log("Apocalypse Now!");
+				triggerCollapse = true;
+				m_OSCManager.GetComponent<OSCManager>().SendNewMessage("/control", "0 0");
+				scapeVolume = 1.2f;
+				fader = true;
+				peak = false;
+			}
 			if (objCounter < 64)
 			{
 				triggerNew();
 				triggerReady = false;
 				timeCount = triggerTimeMax;
 			}
-			if (objCounter == 64)
+			if (objCounter == 64 && !triggerCollapse)
 			{
-				triggerCollapse = true;
-				m_OSCManager.GetComponent<OSCManager>().SendNewMessage("/control", "1 1");
+				triggerTimeMax = 7f;
+				triggerTimeMin = 7f;
+				timeCount = triggerTimeMax;
+				triggerReady = false;
+				peak = true;
+				Debug.Log(triggerTimeMax + " secs to blow!");
 			}
-			
-			
 
-			// manualTrigger = false;
 		}
+
 
 		// testOut = scaleMeExp(testIn, 0f, 100f, 0f, 100f, testPower);
 
@@ -131,15 +162,40 @@ public class TriggerMaster : MonoBehaviour {
         {
 			start = true;
 			m_OSCManager.GetComponent<OSCManager>().SendNewMessage("/control", "1 1");
-
+		}
+		if (Input.GetKeyDown(KeyCode.Escape))
+        {
+			start = false;
+			m_OSCManager.GetComponent<OSCManager>().SendNewMessage("/control", "0 0");
+		}
+		if (Input.GetKeyDown(KeyCode.Space))
+        {
+			if (targetVolume != 1f)
+			{
+				targetVolume = 1f;
+			}
+			else
+			{
+				targetVolume = 0f;
+			}
+			fader = true;			
 		}
 
 		
 
 
 		// Debug.Log(m_MainCamera.transform.rotation.x);
-
-		debugUI.text = "Mmov: " + medianMov + "\nObj: " + debugTxt;
+		if(debug)
+		{
+			debugUI.enabled = true;
+			debugUI.text = "Mmov: " + medianMov + "\nObj: " + debugTxt;
+		}
+		else
+		{
+			debugUI.enabled = false;
+			// debugUI.SetActive(false);
+		}
+		
 		// "AVel: " + angularVelocity.magnitude + 
 		
 	}
@@ -225,6 +281,17 @@ public class TriggerMaster : MonoBehaviour {
 		this.GetComponent<worldmorph>().factor = 1f + distortion * 0.06f;
 		this.GetComponent<worldmorph>().shift = distortion * 0.25f;
 
+		// shorten spawn time according to intensity
+		// full intensity = half the time
+		float targetTmax = initTimeMax - (initTimeMax * 0.5f) * (newIntenstiy * 0.01f);
+		triggerTimeMax = Mathf.Lerp(triggerTimeMax, targetTmax, 0.1f);
+
+		float targetTmin = initTimeMin - (initTimeMin * 0.5f) * (newIntenstiy * 0.01f);
+		triggerTimeMin = Mathf.Lerp(triggerTimeMin, targetTmin, 0.1f);
+
+
+		 
+
 		
 		// Debug.Log(newIntenstiy);
 
@@ -240,7 +307,7 @@ public class TriggerMaster : MonoBehaviour {
 		m_MainCamera.GetComponent<RipplePostProcessor>().MaxAmount = 0f;
 		m_MainCamera.GetComponent<RipplePostProcessor>().Friction = 0.9f;
 
-
+		float checkSum = this.GetComponent<worldmorph>().factor + this.GetComponent<worldmorph>().shift + m_PPVolume.GetComponent<PostProDynamic>().weight;
 		for(int i = 1; i <= 64; i++)
 		{
 			if(GameObject.Find("MysticalSphere"+i) != null)
@@ -248,17 +315,46 @@ public class TriggerMaster : MonoBehaviour {
 				Vector3 current = GameObject.Find("MysticalSphere"+i).transform.localScale;
 				current.x = Mathf.Lerp(current.x, 0f, 0.1f);
 				GameObject.Find("MysticalSphere"+i).transform.localScale = new Vector3(current.x, current.x, current.x);
-				if(current.x == 0f)
-				{
-					Destroy(GameObject.Find("MysticalSphere"+i));
-				}
+
+				checkSum += current.x;
+				// if(current.x == 0f)
+				// {
+				// 	Destroy(GameObject.Find("MysticalSphere"+i));
+				// }
 			}
 		}
 		
+		// Debug.Log("check sum: " + checkSum);
+		if (checkSum <= 1.1f)
+		{
+			totalReset();
+		}
 
+	}
 
+	void totalReset()
+	{
+		for(int i = 1; i <= objCounter; i++)
+		{
+			Destroy(GameObject.Find("MysticalSphere"+i));
+		}
+		
+		objCounter = 0;
+		triggerCollapse = false;
+		start = false;
+		
+		triggerTimeMax = initTimeMax;
+		triggerTimeMin = initTimeMin;
+		timeCount = triggerTimeMax;
+		triggerReady = false;
 
+		globalIntensity = 0f;
+		distortion = 0f;
+		colorIntensity = 0f;
 
+		m_OSCManager.GetComponent<OSCManager>().SendNewMessage("/control", "1 x 1.");
+
+		Debug.Log("RESET COMPLETE");
 
 
 	}
@@ -318,7 +414,21 @@ public class TriggerMaster : MonoBehaviour {
 		GameObject.Find("MysticalSphere"+target).GetComponent<NoiseDeformer>().speed = speed;
 		GameObject.Find("MysticalSphere"+target).GetComponent<NoiseDeformer>().viscosity = viscosity;
 		GameObject.Find("MysticalSphere"+target).GetComponent<NoiseDeformer>().size = size;
-		Debug.Log("Stimulate No. " + target + " with speed " + speed + " / viscosity " + viscosity);
+		// Debug.Log("Stimulate No. " + target + " with speed " + speed + " / viscosity " + viscosity);
+	}
+
+
+
+	void fadeSoundscape()
+	{
+		scapeVolume = Mathf.Lerp(scapeVolume, targetVolume, 0.02f);
+		m_OSCManager.GetComponent<OSCManager>().SendNewMessage("/control", "0 x " + scapeVolume);
+
+		if (scapeVolume > 0.99f && scapeVolume < 1.01f || targetVolume == 0f && scapeVolume < 0.01f) 
+		{
+			fader = false;
+		}
+		// Debug.Log(scapeVolume);
 	}
 
 

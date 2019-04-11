@@ -1,0 +1,45 @@
+{
+	"filetype" : "C74Snapshot",
+	"version" : 2,
+	"minorversion" : 0,
+	"name" : "Shruti Drone v2",
+	"origin" : "Laverne.amxd",
+	"type" : "amxd",
+	"subtype" : "Undefined",
+	"embed" : 0,
+	"snapshot" : 	{
+		"name" : "Laverne.amxd",
+		"origname" : "C74:/packages/Max for Live/patchers/Max Instrument/Laverne/Laverne.amxd",
+		"valuedictionary" : 		{
+			"parameter_values" : 			{
+				"Attack" : 3644.221332131959571,
+				"Decay" : 4213.125471365825433,
+				"Release" : 3734.865961008679278,
+				"Sustain" : 68.184164176866631,
+				"VelMod" : 100.0,
+				"cutoff" : 2843.228346456688996,
+				"env_amount" : 100.0,
+				"filter_attack" : 2806.276254855023581,
+				"filter_decay" : 3360.067951647572045,
+				"filter_release" : 1870.704724409449682,
+				"filter_resonance" : 0.488629921259843,
+				"filter_sustain" : 66.0,
+				"filter_tracking" : -21.946456692913287,
+				"filter_velocity" : 100.0,
+				"level" : 0.271849775232639,
+				"osc1_level" : 83.464566929133881,
+				"osc1_octave" : 1.889763779527557,
+				"osc1_tune" : 0.0,
+				"osc1_wave" : 0.0,
+				"osc2_level" : 80.314960629921302,
+				"osc2_octave" : -1.259842519685038,
+				"osc2_tune" : 15.0,
+				"osc2_wave" : 1.0,
+				"voices" : 1.0
+			}
+
+		}
+
+	}
+
+}
