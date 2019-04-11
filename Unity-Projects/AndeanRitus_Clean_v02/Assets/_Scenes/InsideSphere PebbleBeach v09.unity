@@ -273,8 +273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee3b116907a740d1a1bfc6b534a3a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerTimeMin: 2
-  triggerTimeMax: 4
+  triggerTimeMin: 4
+  triggerTimeMax: 8
   timeCount: 0
   spawnDistance: 5
   debug: 0
