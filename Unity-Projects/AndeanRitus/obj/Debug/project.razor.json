@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "/Users/Simon/CTech/xOrientierungsProjekt/_GitRepo/Andean-Ritus/Unity-Projects/AndeanRitus_Clean_v02/Unity.Postprocessing.Runtime.csproj",
+  "TargetFramework": "v3.5",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

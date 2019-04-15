@@ -1,0 +1,2 @@
+/Users/Simon/CTech/xOrientierungsProjekt/_GitRepo/Andean-Ritus/Unity-Projects/AndeanRitus_Clean_v02/Assets/PostProcessing-2
+/Users/Simon/CTech/xOrientierungsProjekt/_GitRepo/Andean-Ritus/Unity-Projects/AndeanRitus_Clean_v02/Packages/com.unity.postprocessing
