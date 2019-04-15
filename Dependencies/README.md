@@ -1,5 +1,5 @@
 # Dependencies
-To run the project certain packages, externals and configurations are needed to be downloaded,  installed and set.  
+To run the project certain packages, externals and configurations are needed to be downloaded, installed and set.  
 
 
 MAX/MSP:
