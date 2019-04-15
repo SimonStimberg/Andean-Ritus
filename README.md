@@ -5,13 +5,13 @@ Orientation Project - Master Creative Technologies - Winter Term 2018/19
 
 > **Andean Ritus** shall be a *Visual Music Experience* in Virtual Reality, wherein a psychedelic transformation from the real to the surreal can be experienced spatially and interactive via music and equivalent visual elements.
 
-
+![Andean Ritus Screenshot](AR-screenshot.jpg "Andean Ritus Screenshot")
 
 
 ## Setup
 To be able to run the project, Unity v2017, Max 8 and JAVA Runtime Environment are required to be installed.  
 1. Clone or download this reposity.
-2. Install/Set all Dependencies/Configurations as stated under [Dependencies](Dependencies/README.md).
+2. Install/Set all Dependencies/Configurations as stated under [Dependencies](Dependencies/).
 
 
 ## LogFile
