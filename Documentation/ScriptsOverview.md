@@ -3,7 +3,7 @@
 ### UNITY
 
 You will find the scripts under 
-[Unity-Projects/AndeanRitus/Assets/Scripts/](Unity-Projects/AndeanRitus/Assets/Scripts/)
+[Unity-Projects/AndeanRitus/Assets/Scripts/](../Unity-Projects/AndeanRitus/Assets/Scripts/)
 
 #### TriggerMaster.cs
 * this is the heart of the project where most of the event handling is taking place and where the game logic lives.  
