@@ -11,11 +11,19 @@ Orientation Project - Master Creative Technologies - Winter Term 2018/19
 ## Setup
 To be able to run the project, Unity v2017, Max 8 and JAVA Runtime Environment are required to be installed.  
 1. Clone or download this reposity.
-2. Install/Set all Dependencies/Configurations as stated under [Dependencies](Dependencies/).
+2. Install/Set all Dependencies/Configurations as stated under [Dependencies](Dependencies/).  
 
+<br>
+
+## Presentation Slides
+[HERE](PresentationSlides_Simon.pdf) you can find the slides from the project presentation.
+
+<br>
 
 ## LogFile
 Under [LogFile.md](LogFile.md) you will find a kind of log book (or maybe project diary) that reflects my process on working on this project.
+
+<br>
 
 ## Scripts Overview / Credits
 
