@@ -27,8 +27,8 @@ To be able to run the project, Unity v2017, Max 8 and JAVA Runtime Environment a
 * [Scripts Overview](Documentation/ScriptsOverview.md)  
   an overview of the different scripts written for the project, their purpose and credits for adopted code
 
-* [WIKI](wiki)  
+* [WIKI](https://github.com/SimonStimberg/Andean-Ritus/wiki)  
   some short hints for troubleshooting and links to inspirations, similar applications and theoretical resources in the web
 
-* [Project Planning](projects)  
+* [Project Planning](https://github.com/SimonStimberg/Andean-Ritus/projects)  
   my Kanban used for planning
